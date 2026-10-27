@@ -12,4 +12,4 @@ Review (2026-10-27): SKILL.md only, no scripts, no MCP, no network commands. Lic
 
 ## Local modifications
 
-- scientific-thinking-scholar-evaluation: replaced corrupted dash characters (mojibake) with "-". Directory name matches the skill `name`.
+- None to skill content. The scholar-evaluation directory is named after the skill `name` (scientific-thinking-scholar-evaluation).
