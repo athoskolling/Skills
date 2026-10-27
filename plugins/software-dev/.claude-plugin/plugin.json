@@ -1,0 +1,9 @@
+{
+    "name":  "software-dev",
+    "version":  "0.1.0",
+    "description":  "Software development vertical path: implement, tdd, diagnosing-bugs, code-review. Skills are quality level \u0027candidate\u0027 (test use only).",
+    "license":  "see SOURCES.md",
+    "author":  {
+                   "name":  "Athos Kolling"
+               }
+}

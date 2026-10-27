@@ -1,0 +1,14 @@
+{
+    "name":  "ai-skills-ecosystem",
+    "owner":  {
+                  "name":  "Athos Kolling"
+              },
+    "plugins":  [
+                    {
+                        "name":  "software-dev",
+                        "source":  "./plugins/software-dev",
+                        "description":  "Software development vertical path (candidate, MVP test)"
+                    }
+                ],
+    "description":  "Personal skills ecosystem (MVP)"
+}
