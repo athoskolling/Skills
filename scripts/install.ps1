@@ -3,12 +3,14 @@
 #   .\install.ps1 -List
 #   .\install.ps1 -Plugin design -Path C:\proj\.claude\skills            (dry-run)
 #   .\install.ps1 -Plugin all    -Path C:\proj\.claude\skills -Apply
+#   .\install.ps1 -Plugin software-dev -Skill tdd,code-review -Path C:\proj\.claude\skills -Apply   (only some skills)
 #   .\install.ps1 -Plugin design -Path C:\proj\.claude\skills -Rollback -Apply
 #   .\install.ps1 -Plugin design -Mode zip -Path C:\out -Apply          (plugin zip, e.g. for Cowork upload)
 param(
   [string]$Plugin = 'software-dev',
   [ValidateSet('skills','zip')][string]$Mode = 'skills',
   [string]$Path,
+  [string[]]$Skill,   # install only these skills of the plugin (default: all)
   [switch]$Apply,
   [switch]$Rollback,
   [switch]$List
@@ -57,7 +59,12 @@ foreach ($name in $targets) {
 
   if (Test-Path $state) { throw "$name already installed at $Path (record exists). Run -Rollback first." }
   $created=@(); $backups=@(); $dirs=@()
-  foreach ($src in Get-ChildItem "$plugin\skills" -Directory) {
+  $skillDirs = Get-ChildItem "$plugin\skills" -Directory | Where-Object { -not $Skill -or $Skill -contains $_.Name }
+  if ($Skill -and $Plugin -ne 'all') {
+    $unknown = $Skill | Where-Object { $_ -notin (Get-ChildItem "$plugin\skills" -Directory).Name }
+    if ($unknown) { throw "Unknown skill(s) in ${name}: $($unknown -join ', ')" }
+  }
+  foreach ($src in $skillDirs) {
     $dstRoot = Join-Path $Path $src.Name
     foreach ($file in Get-ChildItem $src.FullName -Recurse -File) {
       $rel = $file.FullName.Substring($src.FullName.Length).TrimStart('\')
