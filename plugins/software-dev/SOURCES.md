@@ -1,4 +1,4 @@
-﻿# Sources
+# Sources
 
 Skills copied unmodified from `catalog/skills-catalog.zip` (see `catalog/index.csv` for commit and source path).
 
@@ -15,3 +15,5 @@ Dropped from teams.yaml: `spec` (gstack), per the "max 4 skills" note. teams.yam
 ## Local modifications
 
 - implement: removed `disable-model-invocation: true` from the frontmatter. With it, the dev-flow command could not call the skill (found in eval case 1, 2026-10-27). Re-apply this when updating from upstream.
+
+Licenses: see ../../catalog/LICENSES.md (checked 2026-10-27).
