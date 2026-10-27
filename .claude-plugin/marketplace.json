@@ -13,6 +13,11 @@
                         "name":  "research-synthesis",
                         "source":  "./plugins/research-synthesis",
                         "description":  "Question to cited report (candidate, MVP test)"
+                    },
+                    {
+                        "name":  "design",
+                        "source":  "./plugins/design",
+                        "description":  "Briefing to design spec (candidate, MVP test)"
                     }
                 ],
     "description":  "Personal skills ecosystem (MVP)"
