@@ -32,3 +32,17 @@ Follow shared/standards/skill-standard.md and start from shared/templates/SKILL.
 
 Or copy skills only: `scripts/install.ps1 -Path <project>\.claude\skills -Apply` (dry-run without `-Apply`; `-Rollback` undoes).
 
+
+## Install (copy skills, any tool)
+
+Four plugins: software-dev, research-synthesis, design, presentations. Dry-run is the default; `-Apply` writes; `-Rollback` undoes.
+
+```powershell
+.\scripts\install.ps1 -List
+.\scripts\install.ps1 -Plugin design -Path <project>\.claude\skills            # dry-run
+.\scripts\install.ps1 -Plugin all -Path <project>\.claude\skills -Apply
+.\scripts\install.ps1 -Plugin all -Path <project>\.claude\skills -Rollback -Apply
+.\scripts\install.ps1 -Plugin design -Mode zip -Path <out> -Apply              # zip, e.g. for Cowork upload
+```
+
+Only Claude Code has been tested. Cowork and Codex are not verified.
