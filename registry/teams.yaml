@@ -1,0 +1,41 @@
+# DRAFT - awaiting user approval (PROMPT_MESTRE 10-A). Do not treat as active.
+# Built from catalog/index.csv only. No SKILL.md was opened (Phase 0 rule).
+# All skills are quality level "candidate" (not yet reviewed). In the MVP they may be
+# used for tests only, with this marking explicit.
+# Gaps: the index has no research/source-verification skill and no design-token skill.
+# These need a dedicated search or a new skill (see ROADMAP, Phase 3).
+
+teams:
+
+  software-development:        # Phase 1 pilot
+    status: draft
+    agents: single             # no independent parts; parallel agents not justified
+    skills:
+      - { order: 1, skill: spec,             resource: gstack,            role: "clarify requirement (name confirmed in index.csv)" }
+      - { order: 2, skill: implement,        resource: matt-pocock-skills, role: "implement from spec" }
+      - { order: 3, skill: tdd,              resource: matt-pocock-skills, role: "test-first discipline" }
+      - { order: 4, skill: diagnosing-bugs,  resource: matt-pocock-skills, role: "debug failures" }
+      - { order: 5, skill: code-review,      resource: matt-pocock-skills, role: "independent review" }
+    note: "Max 4 skills in MVP: drop order 1 if the plugin needs trimming."
+
+  research-synthesis:          # Phase 3
+    status: draft-gap
+    skills:
+      - { skill: scientific-thinking-literature-review, resource: ecc, role: "literature/source review (dept testing-qa, check fit)" }
+      - { skill: article-writing,                       resource: ecc, role: "write report" }
+    gap: "no source-verification skill found in index; search externally or create"
+
+  design:                      # Phase 3
+    status: draft
+    skills:
+      - { skill: frontend-design-direction, resource: ecc,  role: "briefing -> direction" }
+      - { skill: design-system,             resource: ecc,  role: "tokens and components" }
+      - { skill: frontend-a11y,             resource: ecc,  role: "accessibility check" }
+      - { skill: theme-factory,             resource: anthropic-skills-official, role: "theme tokens" }
+
+  presentations:               # Phase 3
+    status: draft
+    skills:
+      - { skill: frontend-slides, resource: ecc,                       role: "slide structure" }
+      - { skill: writing-shape,   resource: matt-pocock-skills,        role: "content structuring" }
+      - { skill: brand-guidelines, resource: anthropic-skills-official, role: "consistency review" }

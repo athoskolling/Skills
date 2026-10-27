@@ -1,0 +1,25 @@
+# AI skills ecosystem
+
+A registry, architecture, and shared standards for AI agent skills. Built to be reused across projects, not copied into each one.
+
+## Start here
+
+- registry/skills.yaml: inventory of candidate resources, with status and decision.
+- registry/compatibility.yaml: where each platform loads skills.
+- skills-library/: documentation snapshot (SKILL.md, README, LICENSE) of the candidate repos, with commit hashes in skills-library/INDEX.md. Unreviewed third-party text. Nothing in it has been installed or run.
+- architecture/overview.md: how the parts fit together.
+- ROADMAP.md: what is done and what is next.
+
+## Status
+
+Version 0.1. The registry and standards exist. Skills are not yet installed, reviewed, or tested. See ROADMAP.md.
+
+## Using this in a project
+
+1. Look up the task in registry/skills.yaml and pick the smallest set of skills.
+2. Install them with the method listed in registry/compatibility.yaml for your platform.
+3. Keep project rules in CLAUDE.md or AGENTS.md. Do not put them in a skill.
+
+## Adding a skill
+
+Follow shared/standards/skill-standard.md and start from shared/templates/SKILL.template.md. Add an entry to registry/skills.yaml.

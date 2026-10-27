@@ -1,0 +1,231 @@
+# Resource inventory for the AI skills ecosystem.
+# status values:
+#   listed    - appeared in search results; SKILL.md NOT yet inspected
+#   reviewed  - SKILL.md / README read and assessed
+#   verified  - installed or run in a test environment
+# decision values (provisional until reviewed):
+#   adopt | adapt | create | reject | pending
+# license "unverified" means the license was not confirmed from the source.
+
+resources:
+
+  - id: anthropic-skills-official
+    name: anthropics/skills (official repository)
+    source: https://github.com/anthropics/skills
+    type: skill-collection
+    platform: claude-code, claude.ai
+    license: "Example skills Apache 2.0; document skills (docx, pdf, pptx, xlsx) source-available, not open source"
+    status: listed
+    decision: adopt
+    departments: [software-engineering, presentations-documents]
+    notes: Official source. Document skills are source-available only, so do not redistribute them.
+
+  - id: superpowers
+    name: Superpowers (core skills library)
+    source: https://github.com/obra/superpowers
+    marketplace: obra/superpowers-marketplace
+    type: skill-collection
+    platform: claude-code (also listed for Cursor, Codex, Copilot CLI, OpenCode)
+    license: MIT
+    status: listed
+    decision: pending
+    departments: [orchestration, software-engineering, quality-assurance]
+    notes: Plan-first, test-driven workflow (brainstorm, plan, execute). Review for overlap with tdd and grilling skills before adopting.
+
+  - id: superpowers-lab
+    name: Superpowers Lab (experimental)
+    source: https://github.com/obra/superpowers-lab
+    type: skill-collection
+    platform: claude-code
+    license: MIT (per a third-party mirror; verify upstream)
+    status: listed
+    decision: pending
+    departments: [software-engineering, automation-integrations]
+    notes: Experimental. Skills include finding-duplicate-functions, using-tmux-for-interactive-commands, mcp-cli, slack-messaging, windows-vm. Mirror listing says 5 skills.
+
+  - id: matt-pocock-skills
+    name: mattpocock/skills
+    source: https://github.com/mattpocock/skills
+    type: skill-collection
+    platform: claude-code, codex
+    license: MIT
+    status: listed
+    decision: pending
+    departments: [software-engineering, orchestration, quality-assurance]
+    notes: Engineering workflow skills (grill-me, tdd, triage, to-prd, to-issues, diagnose, zoom-out). Setup skill writes project config. Skill count differs by source (12 to 24).
+
+  - id: karpathy-guidelines
+    name: andrej-karpathy-skills (single CLAUDE.md)
+    source: https://github.com/forrestchang/andrej-karpathy-skills
+    type: project-instructions
+    platform: claude-code, cursor
+    license: unverified
+    status: listed
+    decision: pending
+    departments: [software-engineering]
+    notes: One CLAUDE.md file with four principles (Think First, Simplicity, Surgical Changes, Goal-Driven). This is project instructions, not a skill; keep it separate in the registry. Multiple forks exist.
+
+  - id: gstack
+    name: gstack
+    source: https://github.com/garrytan/gstack
+    type: skill-collection
+    platform: claude-code, codex, gemini-cli, cursor
+    license: MIT (per third-party summary; verify upstream)
+    status: listed
+    decision: pending
+    departments: [software-engineering, orchestration, quality-assurance]
+    notes: 23 specialist skills in a sprint structure. Requires a local build step (./setup). Its suggested CLAUDE.md tells the agent to avoid the claude-in-chrome tools, which conflicts with other browser setups. Review before adopting.
+
+  - id: planning-with-files
+    name: planning-with-files
+    source: https://github.com/OthmanAdi/planning-with-files
+    type: skill
+    platform: claude-code, codex, cursor, and 17+ others
+    license: unverified
+    status: listed
+    decision: pending
+    departments: [orchestration, software-engineering]
+    notes: Persistent markdown planning files for multi-step work. Versions 2.x and 3.x include hooks. Check hook scripts before installing.
+
+  - id: impeccable
+    name: Impeccable (frontend design)
+    source: https://github.com/pbakaus/impeccable
+    type: skill-collection
+    platform: claude-code, cursor, windsurf
+    license: Apache-2.0 (per third-party summary; verify upstream)
+    status: listed
+    decision: pending
+    departments: [product-design, graphic-design, software-engineering]
+    notes: Design commands for frontend work (audit, polish, critique, and others). Overlaps with frontend-design and design-critique skills.
+
+  - id: taste-skill
+    name: taste-skill
+    source: https://github.com/Leonxlnx/taste-skill
+    type: skill-collection
+    platform: claude-code and others
+    license: MIT (per third-party summary; verify upstream)
+    status: listed
+    decision: pending
+    departments: [product-design, graphic-design]
+    notes: Design variants (minimalist, brutalist, soft, redesign, image-to-code). Overlaps with Impeccable.
+
+  - id: vercel-agent-skills
+    name: vercel-labs/agent-skills
+    source: https://github.com/vercel-labs/agent-skills
+    type: skill-collection
+    platform: claude-code, cursor, and skills.sh-compatible agents
+    license: unverified
+    status: listed
+    decision: pending
+    departments: [software-engineering]
+    notes: React and Next.js performance guidelines (vercel-react-best-practices), composition patterns, React Native, deploy-to-vercel. Vendor-maintained.
+
+  - id: ecc
+    name: Everything Claude Code (ECC)
+    source: https://github.com/affaan-m/ECC
+    type: skill-collection
+    platform: claude-code and others
+    license: unverified
+    status: listed
+    decision: pending
+    departments: [software-engineering, cybersecurity]
+    notes: Very large (about 311 skills). Install only selected skills. Some rules must be copied manually, per the README.
+
+  - id: jeffallan-claude-skills
+    name: jeffallan/claude-skills
+    source: https://github.com/jeffallan/claude-skills
+    type: skill-collection
+    platform: claude-code
+    license: MIT (per third-party summary; verify upstream)
+    status: listed
+    decision: pending
+    departments: [software-engineering, api-design]
+    notes: Includes api-designer (REST, GraphQL, OpenAPI 3.1, pagination, versioning) and others.
+
+  - id: api-discipline
+    name: api-discipline
+    source: https://github.com/Skillproofdev/api-discipline
+    type: skill
+    platform: claude-code
+    license: unverified
+    status: listed
+    decision: pending
+    departments: [software-engineering]
+    notes: Enforces OpenAPI 3.1 output with a validator. Benchmark is self-reported; verify independently.
+
+  - id: security-audit-netresearch
+    name: security-audit-skill (netresearch)
+    source: https://github.com/netresearch/security-audit-skill
+    type: skill
+    platform: claude-code, cursor, copilot
+    license: unverified
+    status: listed
+    decision: pending
+    departments: [cybersecurity]
+    notes: OWASP, CWE, and CVSS patterns. Includes PHP/TYPO3-specific scanning, which is out of scope unless needed. Includes hooks.
+
+  - id: security-review-natolitech
+    name: Security Review Skill (natolitech)
+    source: https://github.com/natolitech/security-skill
+    type: command-set
+    platform: claude-code
+    license: unverified
+    status: listed
+    decision: pending
+    departments: [cybersecurity]
+    notes: /security-review and /threat-model slash commands. Copied as command files, not as a skill package.
+
+  - id: agent-security-skill
+    name: agent-security-skill (olanokhin)
+    source: https://github.com/olanokhin/agent-security-skill
+    type: skill
+    platform: claude-code, codex, cursor, copilot, windsurf
+    license: MIT (per repository badge; verify upstream)
+    status: listed
+    decision: pending
+    departments: [cybersecurity]
+    notes: OWASP-aligned checks for AI systems (LLM, RAG, MCP, agent risks). Relevant when building agents.
+
+  - id: trail-of-bits-skills
+    name: Trail of Bits Security Skills
+    source: https://github.com/trailofbits/skills
+    type: skill-collection
+    platform: claude-code
+    license: unverified
+    status: listed
+    decision: pending
+    departments: [cybersecurity]
+    notes: Named in third-party roundups only. Repository not yet opened. Confirm contents before adopting.
+
+  - id: awesome-lists
+    name: Awesome Claude Skills lists
+    source: https://github.com/travisvn/awesome-claude-skills
+    type: directory
+    platform: n/a
+    license: unverified
+    status: listed
+    decision: adopt
+    departments: [orchestration]
+    notes: Other curated lists (ComposioHQ/awesome-claude-skills, karanb192/awesome-claude-skills, VoltAgent/awesome-agent-skills) are also listed. Use as discovery sources, not as adopted skills.
+
+  - id: socratic-tutors
+    name: Socratic and learning skills
+    source: https://github.com/RoundTable02/socrates-skill
+    type: skill
+    platform: claude-code
+    license: unverified
+    status: listed
+    decision: pending
+    departments: [education]
+    notes: "Related candidates: lyndonkl/claude (socratic-teaching-scaffolds), christyjacob4/claude-tricks (guided-learning), dashed/claude-marketplace (teach). Compare before choosing one."
+
+  - id: claude-output-styles
+    name: Claude Code learning output style
+    source: built into Claude Code (/output-styles)
+    type: platform-feature
+    platform: claude-code
+    license: n/a
+    status: listed
+    decision: adopt
+    departments: [education]
+    notes: Not a skill. It is a platform setting (Explanatory and Learning styles). Document it in compatibility.yaml, not as a skill.

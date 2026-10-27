@@ -1,0 +1,39 @@
+# Platform compatibility notes. Only facts confirmed in source material are recorded here.
+# Anything not confirmed is marked "unverified".
+
+platforms:
+
+  claude-code:
+    skill_location:
+      personal: ~/.claude/skills/<name>/SKILL.md
+      project: .claude/skills/<name>/SKILL.md
+    install_methods:
+      - plugin marketplace (/plugin marketplace add <owner>/<repo>, then /plugin install <plugin>@<marketplace>)
+      - npx skills add <owner>/<repo> [--skill <name>] --agent claude-code
+      - manual copy into the skill directories above
+    notes:
+      - Skills are discovered at session start.
+      - Some packages ship hooks. Review hook scripts before installing.
+      - Several community repos require a local build (for example ./setup).
+
+  claude-ai-chat:
+    skill_location: managed in Settings > Capabilities (upload or enable)
+    notes:
+      - Chat cannot run npx or git clone. Skills must be uploaded or enabled.
+      - Claude Code plugins do not automatically appear here.
+
+  codex-cli:
+    skill_location: ~/.codex/skills/<name>/ or .agents/skills/<name>/
+    notes: Several repos ship a setup step for this layout (gstack, planning-with-files). Verify per repository.
+
+  cursor:
+    skill_location: ~/.cursor/skills/<name>/
+    notes: Some skills ship Cursor-specific adapters.
+
+  mcp:
+    notes: Separate from skills. MCP servers provide tools; skills provide instructions. Do not treat them as interchangeable.
+
+conventions:
+  agent_skills_standard: SKILL.md with YAML frontmatter (name, description). Description is what the agent uses to decide when to load the skill, so keep it specific.
+  project_instructions: CLAUDE.md (Claude Code) and AGENTS.md (cross-agent). Keep these separate from skills.
+  secrets: Never store API keys or tokens in a skill folder or in these registry files.

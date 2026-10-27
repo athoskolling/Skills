@@ -1,0 +1,41 @@
+# Roadmap
+
+## Phase status (PROMPT_MESTRE v1.4, section 13)
+
+| Phase | State | Approved on |
+|---|---|---|
+| 0. Base | Done. Catalog (648 skills, `catalog/index.csv`), registry, `registry/teams.yaml` (draft, 2026-10-27) and Git repo in place. | 2026-10-27 (user: "pode continuar") |
+| 1. Software dev vertical path | Not started | - |
+| 2. Cowork validation | Not started | - |
+| 3. Other domains | Blocked until 0, 1, 2 approved | - |
+
+Last task: close Phase 0 (`teams.yaml` placeholder fixed to gstack `spec`, `git init`, first commit).
+Next task: Phase 1, in a new session (one phase per session): controlled installer, plugin with 2-4 skills, one workflow, test cases, rollback.
+Note: `teams.yaml` stays "draft" until explicitly approved; any later change to it needs approval.
+
+The sections below are the earlier delivery notes, kept for history.
+
+## Done (this delivery)
+
+- Environment inspection (Linux, bash, Node 22, Python 3, git, gh, Claude Code CLI). No global skills were changed.
+- Registry of 20 candidate resources from search results. All are "listed" (not reviewed).
+- Architecture overview, orchestration design, security baseline.
+- Skill standard and template.
+- Compatibility notes for claude-code and claude-ai-chat.
+
+## Next (in order)
+
+1. Review the top 10 candidates: read each SKILL.md, README, and any scripts. Update status to "reviewed". Priority: superpowers, matt-pocock-skills, anthropic-skills-official, vercel-agent-skills, jeffallan-claude-skills, agent-security-skill, impeccable, planning-with-files, socratic-tutors, api-discipline.
+2. Install two or three adopted skills into a sandbox project (not the global folder) and run representative tasks. Update status to "verified" only after the run.
+3. Write evaluation cases for the orchestration dispatcher (evaluations/).
+4. Write the first two workflows: research to report, and requirements to implementation to QA.
+5. Create only the skills that no adopted resource covers. Candidates from the taxonomy: a Figma/design-token handoff skill, and a Brazilian Portuguese writing-style skill (if the user wants it).
+
+## Deferred
+
+- Departments with no current candidate (3D, game development, motion, legal, finance). Add them when a real need appears.
+- Automated skill registry scripts (scripts/). Build after the registry has more than 20 reviewed entries.
+
+## Not planned
+
+- Installing every candidate. The inventory is a reference, not a shopping list.
