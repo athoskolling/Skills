@@ -23,3 +23,11 @@ Version 0.1. The registry and standards exist. Skills are not yet installed, rev
 ## Adding a skill
 
 Follow shared/standards/skill-standard.md and start from shared/templates/SKILL.template.md. Add an entry to registry/skills.yaml.
+
+## Install (Claude Code)
+
+```n/plugin marketplace add athoskolling/Skills
+/plugin install software-dev@ai-skills-ecosystem
+```
+
+Or copy skills only: `scripts/install.ps1 -Path <project>\.claude\skills -Apply` (dry-run without `-Apply`; `-Rollback` undoes).
