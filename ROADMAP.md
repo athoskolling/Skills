@@ -7,7 +7,7 @@
 | 0. Base | Done. Catalog (648 skills, `catalog/index.csv`), registry, `registry/teams.yaml` (draft, 2026-10-27) and Git repo in place. | 2026-10-27 (user: "pode continuar") |
 | 1. Software dev vertical path | Done. Built; 3 cases run in Claude Code (2 pass, 1 partial). | 2026-10-27 (user: "aprovado e pode continuar") |
 | 2. Cowork validation | Deferred: Cowork unavailable to the user. Zip built; install test pending (see DECISIONS, Rodada 8) | - |
-| 3. Other domains | All 3 domains built and tested in Claude Code (research-synthesis, design, presentations). Cowork not verified. Awaiting your approval | - |
+| 3. Other domains | All 3 domains built and tested in Claude Code (research-synthesis, design, presentations). Cowork not verified. | 2026-10-27 (user: "aprovado e lesgo continua, cowork fica p dps") |
 
 Last task (Phase 1): built plugins/software-dev (implement, tdd, diagnosing-bugs, code-review; `spec` dropped per teams.yaml note), command dev-flow, scripts/install.ps1 (dry-run default, manifest, rollback; verified in sandbox), marketplace.json. `claude plugin validate` ok.`nNext: run the 3 cases in Claude Code, record results, then ask for Phase 1 approval. Not done yet: end-to-end run, Cowork (Phase 2), Codex format.`n`nPrevious task: close Phase 0 (`teams.yaml` placeholder fixed to gstack `spec`, `git init`, first commit).
 Next task: Phase 1, in a new session (one phase per session): controlled installer, plugin with 2-4 skills, one workflow, test cases, rollback.
@@ -65,4 +65,5 @@ Teams in `registry/teams.yaml` are a first draft built from the index only. Keep
 - (2026-10-27) Phase 3, design: plugin built, 3 cases PASS in Claude Code (evaluations/design/cases.md); case 2 contrast not independently verified. Cowork: not verified. Next domain: presentations (propose team, get approval, same process).
 
 - (2026-10-27) Phase 3, presentations: plugin built, 3 cases PASS in Claude Code (evaluations/presentations/cases.md). All 3 pilot domains now have a plugin; none verified in Cowork. Open: better long-input case, open decks in a browser, license check, Cowork test, review of weak skills in each team.
+
 
