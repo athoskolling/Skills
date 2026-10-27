@@ -15,7 +15,7 @@ Review files for compliance with Writing Guidelines.
 
 1. Read the pinned guidelines in references/rules.md
 2. Read the specified files (or prompt user for files/pattern)
-3. Check against all rules in the fetched guidelines
+3. Check against all rules in the pinned guidelines
 4. Output findings in the terse `file:line` format
 
 ## Guidelines Source
@@ -27,7 +27,7 @@ Use the pinned local copy at `references/rules.md` (next to this file). Do NOT f
 When a user provides a file or pattern argument:
 1. Read references/rules.md
 2. Read the specified files
-3. Apply all rules from the fetched guidelines
+3. Apply all rules from the pinned guidelines
 4. Output findings using the format specified in the guidelines
 
 If no files specified, ask the user which files to review.
