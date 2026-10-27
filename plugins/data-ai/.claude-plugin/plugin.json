@@ -1,0 +1,9 @@
+{
+    "name":  "data-ai",
+    "version":  "0.1.0",
+    "license":  "see SOURCES.md",
+    "description":  "Prompts, RAG, ML pipelines and LLM cost. Skills are untested candidates.",
+    "author":  {
+                   "name":  "Athos Kolling"
+               }
+}

@@ -48,3 +48,5 @@ Four plugins: software-dev, research-synthesis, design, presentations. Dry-run i
 Only Claude Code has been tested. Cowork and Codex are not verified.
 
 Install only some skills of a plugin: `.\scripts\install.ps1 -Plugin software-dev -Skill tdd,code-review -Path <project>\.claude\skills -Apply`. Installing through the marketplace (`/plugin install`) is per whole plugin.
+
+See `GRUPOS.md` (what each group and skill does) and `GUIA.md` (install, choose some skills, add more).

@@ -1,0 +1,9 @@
+{
+    "name":  "devops-infra",
+    "version":  "0.1.0",
+    "license":  "see SOURCES.md",
+    "description":  "Containers, clusters, infrastructure as code, deploy and monitoring. Skills are untested candidates.",
+    "author":  {
+                   "name":  "Athos Kolling"
+               }
+}

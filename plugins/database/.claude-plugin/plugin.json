@@ -1,0 +1,9 @@
+{
+    "name":  "database",
+    "version":  "0.1.0",
+    "license":  "see SOURCES.md",
+    "description":  "Schema, migrations, query tuning and SQL/Redis patterns. Skills are untested candidates.",
+    "author":  {
+                   "name":  "Athos Kolling"
+               }
+}

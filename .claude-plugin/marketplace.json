@@ -23,6 +23,56 @@
                         "name":  "presentations",
                         "source":  "./plugins/presentations",
                         "description":  "Content to reviewed slide structure (candidate, MVP test)"
+                    },
+                    {
+                        "name":  "security-audit",
+                        "source":  "./plugins/security-audit",
+                        "description":  "security-audit (untested)"
+                    },
+                    {
+                        "name":  "qa-release",
+                        "source":  "./plugins/qa-release",
+                        "description":  "qa-release (untested)"
+                    },
+                    {
+                        "name":  "devops-infra",
+                        "source":  "./plugins/devops-infra",
+                        "description":  "devops-infra (untested)"
+                    },
+                    {
+                        "name":  "database",
+                        "source":  "./plugins/database",
+                        "description":  "database (untested)"
+                    },
+                    {
+                        "name":  "apis-mcp",
+                        "source":  "./plugins/apis-mcp",
+                        "description":  "apis-mcp (untested)"
+                    },
+                    {
+                        "name":  "data-ai",
+                        "source":  "./plugins/data-ai",
+                        "description":  "data-ai (untested)"
+                    },
+                    {
+                        "name":  "docs-writing",
+                        "source":  "./plugins/docs-writing",
+                        "description":  "docs-writing (untested)"
+                    },
+                    {
+                        "name":  "agent-orchestration",
+                        "source":  "./plugins/agent-orchestration",
+                        "description":  "agent-orchestration (untested)"
+                    },
+                    {
+                        "name":  "learning",
+                        "source":  "./plugins/learning",
+                        "description":  "learning (untested)"
+                    },
+                    {
+                        "name":  "business-ops",
+                        "source":  "./plugins/business-ops",
+                        "description":  "business-ops (untested)"
                     }
                 ],
     "description":  "Personal skills ecosystem (MVP)"

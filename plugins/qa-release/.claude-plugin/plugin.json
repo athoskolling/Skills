@@ -1,0 +1,9 @@
+{
+    "name":  "qa-release",
+    "version":  "0.1.0",
+    "license":  "see SOURCES.md",
+    "description":  "Test depth, coverage and safe release checks. Skills are untested candidates.",
+    "author":  {
+                   "name":  "Athos Kolling"
+               }
+}

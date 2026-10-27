@@ -1,0 +1,9 @@
+{
+    "name":  "learning",
+    "version":  "0.1.0",
+    "license":  "see SOURCES.md",
+    "description":  "Teach, learn and onboard. Skills are untested candidates.",
+    "author":  {
+                   "name":  "Athos Kolling"
+               }
+}

@@ -1,0 +1,9 @@
+{
+    "name":  "business-ops",
+    "version":  "0.1.0",
+    "license":  "see SOURCES.md",
+    "description":  "Competitive analysis, project flow and knowledge ops. Skills are untested candidates.",
+    "author":  {
+                   "name":  "Athos Kolling"
+               }
+}

@@ -70,3 +70,5 @@ Teams in `registry/teams.yaml` are a first draft built from the index only. Keep
 
 - (2026-10-27) License audit done: catalog/LICENSES.md. Open risks: 9 vercel-agent-skills have no license; trail-of-bits is CC-BY-SA; several collections unchecked; repo is public. Presentations long case with real text: PASS. Remaining before Phase 4: Cowork test, browser check of decks, decision on the public zip.
 
+
+- (2026-10-27) Groups 5-14 added in simple mode (selected from index, pattern-scanned, NOT tested): security-audit, qa-release, devops-infra, database, apis-mcp, data-ai, docs-writing, agent-orchestration, learning, business-ops. 83 skills in 14 groups. Docs: GRUPOS.md, GUIA.md. Tool: scripts/add-skills.ps1. Test a group only when it is used and fails.

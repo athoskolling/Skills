@@ -1,0 +1,9 @@
+{
+    "name":  "agent-orchestration",
+    "version":  "0.1.0",
+    "license":  "see SOURCES.md",
+    "description":  "Planning, specs, tickets, handoff and parallel agents. Skills are untested candidates.",
+    "author":  {
+                   "name":  "Athos Kolling"
+               }
+}

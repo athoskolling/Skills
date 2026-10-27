@@ -1,0 +1,9 @@
+{
+    "name":  "docs-writing",
+    "version":  "0.1.0",
+    "license":  "see SOURCES.md",
+    "description":  "Documentation, writing structure and voice. Skills are untested candidates.",
+    "author":  {
+                   "name":  "Athos Kolling"
+               }
+}

@@ -1,0 +1,9 @@
+{
+    "name":  "security-audit",
+    "version":  "0.1.0",
+    "license":  "see SOURCES.md",
+    "description":  "Review code and dependencies for security problems. Skills are untested candidates.",
+    "author":  {
+                   "name":  "Athos Kolling"
+               }
+}
