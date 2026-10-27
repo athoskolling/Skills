@@ -16,3 +16,11 @@ Extra checks: no web/MCP tool called; deck.html has no external URL; every slide
 - **Case 3 (no content): PASS.** Stopped before any skill ran, wrote no files, said exactly what is missing (topic/main point, audience, raw material).
 - **Independent HTML check (my script, not a browser):** both decks have viewport-height CSS, overflow hidden, keyboard handler, `lang` attribute, balanced `<section>` tags. This does not prove they render well; no one opened them in a browser.
 - **Limits:** one run per case; the deck was never viewed in a browser; the pinned writing rules target documentation, so only part of them fit slides. Cowork: not verified.
+
+## Case 2b: long real text (added 2026-10-27)
+
+Input: a ~330-word, non-repeating post-mortem (releases breaking on Fridays; many numbers, 3 fixes, recommendation, cost, risk, metric).
+
+- **PASS.** writing-beats, frontend-slides, writing-guidelines called in order; 0 web/MCP calls; beats.md, slides.md and deck.html written; 9 slides (title, problem, causes, rollback time, fixes, canary, recommendation, cost/risk/metric).
+- **Fidelity check (my script):** all key figures from the input are in the output (41 releases, 9 hotfixes, 14 vs 6 PRs, 52 vs 18 minutes, 5 percent canary, 30 minutes, cap of 8 PRs, two engineer-weeks). Numbers in the deck that are not in the input are only number-words converted to digits ("Seven" to 7, "three" to 3). No invented figures found.
+- **Still not done:** the deck was not opened in a browser; one run.

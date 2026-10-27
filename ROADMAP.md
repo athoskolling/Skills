@@ -67,3 +67,6 @@ Teams in `registry/teams.yaml` are a first draft built from the index only. Keep
 - (2026-10-27) Phase 3, presentations: plugin built, 3 cases PASS in Claude Code (evaluations/presentations/cases.md). All 3 pilot domains now have a plugin; none verified in Cowork. Open: better long-input case, open decks in a browser, license check, Cowork test, review of weak skills in each team.
 
 
+
+- (2026-10-27) License audit done: catalog/LICENSES.md. Open risks: 9 vercel-agent-skills have no license; trail-of-bits is CC-BY-SA; several collections unchecked; repo is public. Presentations long case with real text: PASS. Remaining before Phase 4: Cowork test, browser check of decks, decision on the public zip.
+
