@@ -40,3 +40,15 @@ The sections below are the earlier delivery notes, kept for history.
 
 - Installing every candidate. The inventory is a reference, not a shopping list.
 
+
+## Ongoing: improve skill teams (added 2026-10-27)
+
+Teams in `registry/teams.yaml` are a first draft built from the index only. Keep improving them after each phase:
+
+- Run the evaluation cases per team and record which skills help, overlap or are never used. Remove or replace the weak ones.
+- Revisit the dropped `spec` (gstack) skill for software-dev; decide if a 5th skill is worth it.
+- Fill gaps: source-verification (research), design tokens (design). Search externally or create.
+- Review catalog duplicates (`catalog/dedupe_log.csv`) when picking skills for a team.
+- Check licenses before redistributing skills publicly (the repo is public).
+- Every change to `teams.yaml` needs user approval (PROMPT_MESTRE 10-A).
+- Work method: one commit per change, pushed to GitHub, so the history shows how the organization evolves.
