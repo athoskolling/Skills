@@ -18,3 +18,12 @@ Plugin-level checks (done 2026-10-27): `claude plugin validate` passes (icon war
 - **Not yet verified:** the `diagnosing-bugs` path. Needs a case where the cause is not obvious (e.g. an intermittent or multi-file bug).
 - **Observation:** in case 1, code-review ran as a forked step and returned no text, so its value is unproven.
 - Each case is a single run, not a statistical sample.
+
+## Case 4: hidden bug (added 2026-10-27)
+
+Input: "existing test suite is failing, fix without weakening tests, state the root cause" in a 3-file project where `memo.js` keys its cache on `args[0]` only (so `priceIn(10,'EUR')` returns the cached USD result).
+
+- **Run A (original dev-flow): root cause found and fixed, 3/3 pass, but `diagnosing-bugs` NOT called.** The agent never "failed", so step 2 never triggered.
+- **Fix:** added step 0 to `commands/dev-flow.md`: call `diagnosing-bugs` first when the task starts from a bug, failing test or broken build.
+- **Run B (after fix): PASS.** Skills called: diagnosing-bugs, code-review. 3/3 pass, commit made, no test touched.
+- Single run each. The `diagnosing-bugs` path is now verified once.

@@ -53,6 +53,7 @@ Teams in `registry/teams.yaml` are a first draft built from the index only. Keep
 - Every change to `teams.yaml` needs user approval (PROMPT_MESTRE 10-A).
 - Work method: one commit per change, pushed to GitHub, so the history shows how the organization evolves.
 
-- (2026-10-27) Phase 1 eval: cases 1-3 ran in Claude Code (see evaluations/software-dev/cases.md). Open: add a hard-bug case to exercise diagnosing-bugs; check that tdd is actually used in every run; check what code-review returns.
+- (2026-10-27) Phase 1 eval: cases 1-3 ran in Claude Code (see evaluations/software-dev/cases.md). Case 4 added and diagnosing-bugs verified once (dev-flow step 0 added). Open: check that tdd is actually used in every run; check what code-review returns.
+
 
 
