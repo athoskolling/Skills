@@ -1,0 +1,9 @@
+{
+    "name":  "engineering-practices",
+    "version":  "0.1.0",
+    "license":  "see SOURCES.md",
+    "description":  "Architecture, debugging discipline and codebase upkeep. Skills are untested candidates.",
+    "author":  {
+                   "name":  "Athos Kolling"
+               }
+}

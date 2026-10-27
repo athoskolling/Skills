@@ -10,3 +10,5 @@ Licenses: see ../../catalog/LICENSES.md.
 | socratic-tutors | socratic-tutors | Socratic method teaching skill that guides users to discover answers themselves through questioning, never giving direct answers. | none |
 | scaffold-exercises | matt-pocock-skills | Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. | none |
 | codebase-onboarding | ecc | Analyze an unfamiliar codebase and generate a structured onboarding guide with architecture map, key entry points, conventions, and a sta... | npx |
+| academy-guide | anthropic-skills-official | > | mcp |
+| discernment-nudge | anthropic-skills-official | > | none |

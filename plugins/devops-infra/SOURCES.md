@@ -12,3 +12,7 @@ Licenses: see ../../catalog/LICENSES.md.
 | devops-engineer | jeffallan-claude-skills | Creates Dockerfiles, configures CI/CD pipelines, writes Kubernetes manifests, and generates Terraform/Pulumi infrastructure templates. | .py, curl, pip install |
 | monitoring-expert | jeffallan-claude-skills | Configures monitoring systems, implements structured logging pipelines, creates Prometheus/Grafana dashboards, defines alerting rules, an... | none |
 | sre-engineer | jeffallan-claude-skills | Defines service level objectives, creates error budget policies, designs incident response procedures, develops capacity models, and prod... | none |
+| cloud-architect | jeffallan-claude-skills | Designs cloud architectures, creates migration plans, generates cost optimization recommendations, and produces disaster recovery strateg... | none |
+| kubernetes-specialist | jeffallan-claude-skills | Use when deploying or managing Kubernetes workloads. | none |
+| deploy-to-vercel | vercel-agent-skills | Deploy applications and websites to Vercel. | .sh, curl, npm i |
+| devcontainer-setup | trail-of-bits-skills | Creates devcontainers with Claude Code, language-specific tooling (Python/Node/Rust/Go), and persistent volumes. | .py, .sh, api_key, npm i, rm -rf |

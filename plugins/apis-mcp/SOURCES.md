@@ -13,3 +13,7 @@ Licenses: see ../../catalog/LICENSES.md.
 | mcp-server-patterns | ecc | Build MCP servers with Node/TypeScript SDK — tools, resources, prompts, Zod validation, stdio vs Streamable HTTP. | mcp, npm i |
 | mcp-developer | jeffallan-claude-skills | Use when building, debugging, or extending MCP servers or clients that connect AI systems with external tools and data sources. | mcp, npx, pip install |
 | claude-api | anthropic-skills-official | /- | .py, api key, api_key, apikey, api-key, curl, mcp, webfetch |
+| fastapi-expert | jeffallan-claude-skills | Use when building high-performance async Python APIs with FastAPI and Pydantic V2. | .py |
+| api-connector-builder | ecc | Build a new API connector or provider by matching the target repo's existing integration pattern exactly. | .py, mcp |
+| mcp-dependency-review | ecc | Statically review MCP configuration for mutable package references before approval or CI, without executing discovered MCP servers. | mcp, npx |
+| mcp-cli | superpowers-lab | Use MCP servers on-demand via the mcp CLI tool - discover tools, resources, and prompts without polluting context with pre-loaded MCP int... | api_key, mcp, npx |

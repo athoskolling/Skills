@@ -73,6 +73,26 @@
                         "name":  "business-ops",
                         "source":  "./plugins/business-ops",
                         "description":  "business-ops (untested)"
+                    },
+                    {
+                        "name":  "web-frontend",
+                        "source":  "./plugins/web-frontend",
+                        "description":  "web-frontend (untested)"
+                    },
+                    {
+                        "name":  "languages",
+                        "source":  "./plugins/languages",
+                        "description":  "languages (untested)"
+                    },
+                    {
+                        "name":  "engineering-practices",
+                        "source":  "./plugins/engineering-practices",
+                        "description":  "engineering-practices (untested)"
+                    },
+                    {
+                        "name":  "mobile",
+                        "source":  "./plugins/mobile",
+                        "description":  "mobile (untested)"
                     }
                 ],
     "description":  "Personal skills ecosystem (MVP)"

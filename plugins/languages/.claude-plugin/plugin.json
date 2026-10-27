@@ -1,0 +1,9 @@
+{
+    "name":  "languages",
+    "version":  "0.1.0",
+    "license":  "see SOURCES.md",
+    "description":  "Language and framework specialists. Skills are untested candidates.",
+    "author":  {
+                   "name":  "Athos Kolling"
+               }
+}

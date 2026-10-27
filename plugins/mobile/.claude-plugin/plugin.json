@@ -1,0 +1,9 @@
+{
+    "name":  "mobile",
+    "version":  "0.1.0",
+    "license":  "see SOURCES.md",
+    "description":  "Mobile apps: Flutter, React Native, SwiftUI, Android and Kotlin. Skills are untested candidates.",
+    "author":  {
+                   "name":  "Athos Kolling"
+               }
+}
