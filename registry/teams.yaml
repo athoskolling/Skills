@@ -1,4 +1,4 @@
-# DRAFT - awaiting user approval (PROMPT_MESTRE 10-A). Do not treat as active.
+﻿# DRAFT - awaiting user approval (PROMPT_MESTRE 10-A). Do not treat as active.
 # Built from catalog/index.csv only. No SKILL.md was opened (Phase 0 rule).
 # All skills are quality level "candidate" (not yet reviewed). In the MVP they may be
 # used for tests only, with this marking explicit.
@@ -18,13 +18,14 @@ teams:
       - { order: 5, skill: code-review,      resource: matt-pocock-skills, role: "independent review" }
     note: "Max 4 skills in MVP: drop order 1 if the plugin needs trimming."
 
-  research-synthesis:          # Phase 3
-    status: draft-gap
+  research-synthesis:          # Phase 3, approved 2026-10-27 (user: "vai la")
+    status: draft              # skills are candidate until reviewed/tested
+    agents: single
     skills:
-      - { skill: scientific-thinking-literature-review, resource: ecc, role: "literature/source review (dept testing-qa, check fit)" }
-      - { skill: article-writing,                       resource: ecc, role: "write report" }
-    gap: "no source-verification skill found in index; search externally or create"
-
+      - { order: 1, skill: research,                                resource: matt-pocock-skills, role: "investigate question in primary sources, write findings to Markdown" }
+      - { order: 2, skill: scientific-thinking-scholar-evaluation,  resource: ecc,                role: "check source and evidence quality (fills the verification gap)" }
+      - { order: 3, skill: article-writing,                         resource: ecc,                role: "write the final report with cited sources" }
+    rejected: "deep-research (ecc): needs firecrawl/exa MCP = risk High + possible cost; research-ops: overlaps research; literature-review: academic-only"
   design:                      # Phase 3
     status: draft
     skills:
@@ -39,3 +40,4 @@ teams:
       - { skill: frontend-slides, resource: ecc,                       role: "slide structure" }
       - { skill: writing-shape,   resource: matt-pocock-skills,        role: "content structuring" }
       - { skill: brand-guidelines, resource: anthropic-skills-official, role: "consistency review" }
+
