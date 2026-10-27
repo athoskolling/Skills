@@ -1,4 +1,4 @@
-# AI skills ecosystem
+﻿# AI skills ecosystem
 
 A registry, architecture, and shared standards for AI agent skills. Built to be reused across projects, not copied into each one.
 
@@ -31,3 +31,4 @@ Follow shared/standards/skill-standard.md and start from shared/templates/SKILL.
 ```
 
 Or copy skills only: `scripts/install.ps1 -Path <project>\.claude\skills -Apply` (dry-run without `-Apply`; `-Rollback` undoes).
+
