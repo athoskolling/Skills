@@ -11,3 +11,7 @@ Skills copied unmodified from `catalog/skills-catalog.zip` (see `catalog/index.c
 
 Review (2026-10-27): SKILL.md only, no scripts or dependencies. Only network mention is a user-run curl example in diagnosing-bugs. License not yet checked: verify before any redistribution.
 Dropped from teams.yaml: `spec` (gstack), per the "max 4 skills" note. teams.yaml itself is unchanged and still draft.
+
+## Local modifications
+
+- implement: removed `disable-model-invocation: true` from the frontmatter. With it, the dev-flow command could not call the skill (found in eval case 1, 2026-10-27). Re-apply this when updating from upstream.
