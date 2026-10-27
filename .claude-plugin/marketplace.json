@@ -18,6 +18,11 @@
                         "name":  "design",
                         "source":  "./plugins/design",
                         "description":  "Briefing to design spec (candidate, MVP test)"
+                    },
+                    {
+                        "name":  "presentations",
+                        "source":  "./plugins/presentations",
+                        "description":  "Content to reviewed slide structure (candidate, MVP test)"
                     }
                 ],
     "description":  "Personal skills ecosystem (MVP)"
