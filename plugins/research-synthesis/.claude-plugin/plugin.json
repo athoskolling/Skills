@@ -1,0 +1,6 @@
+{
+  "name": "research-synthesis",
+  "version": "0.1.0",
+  "description": "From a question to a report with cited sources: research, source/evidence check, write-up. Skills are candidate level (test use only).",
+  "author": { "name": "Athos Kolling" }
+}

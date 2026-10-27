@@ -1,0 +1,15 @@
+# Sources
+
+Skills copied from `catalog/skills-catalog.zip` (see `catalog/index.csv` for commit and source path).
+
+| Skill | Resource | Zip path | Level |
+|---|---|---|---|
+| research | matt-pocock-skills | orchestration/research | candidate |
+| scientific-thinking-scholar-evaluation | ecc | data-ai/scientific-thinking-scholar-evaluation | candidate |
+| article-writing | ecc | writing-content/article-writing | candidate |
+
+Review (2026-10-27): SKILL.md only, no scripts, no MCP, no network commands. License not yet checked. article-writing refers to an optional `brand-voice` skill that is not installed (only used if the user supplies a voice).
+
+## Local modifications
+
+- scientific-thinking-scholar-evaluation: replaced corrupted dash characters (mojibake) with "-". Directory name matches the skill `name`.
