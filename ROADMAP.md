@@ -1,4 +1,4 @@
-﻿# Roadmap
+# Roadmap
 
 ## Phase status (PROMPT_MESTRE v1.4, section 13)
 
@@ -73,3 +73,5 @@ Teams in `registry/teams.yaml` are a first draft built from the index only. Keep
 
 - (2026-10-27) Groups 5-14 added in simple mode (selected from index, pattern-scanned, NOT tested): security-audit, qa-release, devops-infra, database, apis-mcp, data-ai, docs-writing, agent-orchestration, learning, business-ops. 86 skills in 14 groups. Docs: GRUPOS.md, GUIA.md. Tool: scripts/add-skills.ps1. Test a group only when it is used and fails.
 
+
+- (2026-10-27) Duplicates cleaned: removed 65 nested copies in the gstack bundle and 2 gstack test fixtures (alpha, beta). Catalog is now 646 skills (index and zip match exactly). No duplicate names. Functional overlaps inside groups left as is (see GUIA.md).

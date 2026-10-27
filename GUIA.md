@@ -3,7 +3,7 @@
 ## Como o repositório se organiza
 
 - `plugins/<grupo>/skills/<skill>/SKILL.md`: cada grupo é uma pasta, cada skill uma subpasta.
-- `catalog/skills-catalog.zip` e `catalog/index.csv`: o acervo completo (648 skills) para consulta.
+- `catalog/skills-catalog.zip` e `catalog/index.csv`: o acervo completo (646 skills) para consulta.
 - `GRUPOS.md`: o que cada grupo e cada skill faz.
 - `scripts/install.ps1` instala. `scripts/add-skills.ps1` adiciona skills a um grupo.
 

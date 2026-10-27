@@ -790,3 +790,6 @@ documentation-lookup,ecc,ecc,duplicate name
 verification-loop,ecc,ecc,duplicate name
 frontend-patterns,ecc,ecc,duplicate name
 context-and-decisions,ecc,ecc,duplicate name
+alpha,gstack,,removed 2026-10-27: gstack test fixture, not a real skill
+beta,gstack,,removed 2026-10-27: gstack test fixture, not a real skill
+(65 nested SKILL.md under orchestration/gstack/**),gstack,,removed 2026-10-27: 63 exact copies of indexed skills + gstack retro (already dropped as duplicate name) + capy/skill/gstack variant

@@ -1,6 +1,6 @@
-﻿# Grupos de skills
+# Grupos de skills
 
-14 grupos, 86 skills (o acervo completo tem 648; o resto fica em `catalog/` para consulta).
+14 grupos, 86 skills (o acervo completo tem 646; o resto fica em `catalog/` para consulta).
 Estado: os 4 primeiros foram testados no Claude Code. Os outros 10 **nÃ£o foram testados** (sÃ³ selecionados e passaram por uma varredura de padrÃµes de risco, listada no `SOURCES.md` de cada grupo).
 Como usar, escolher sÃ³ algumas e adicionar mais: veja `GUIA.md`.
 
