@@ -8,6 +8,11 @@
                         "name":  "software-dev",
                         "source":  "./plugins/software-dev",
                         "description":  "Software development vertical path (candidate, MVP test)"
+                    },
+                    {
+                        "name":  "research-synthesis",
+                        "source":  "./plugins/research-synthesis",
+                        "description":  "Question to cited report (candidate, MVP test)"
                     }
                 ],
     "description":  "Personal skills ecosystem (MVP)"
