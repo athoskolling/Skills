@@ -1,6 +1,6 @@
-﻿# Grupos de skills
+# Grupos de skills
 
-18 grupos, 237 skills (o acervo completo tem 646; o resto fica em `catalog/` para consulta).
+19 grupos, 239 skills (o acervo completo tem 646; o resto fica em `catalog/` para consulta).
 Estado: os 4 primeiros foram testados no Claude Code. Os outros 10 **nÃƒÂ£o foram testados** (sÃƒÂ³ selecionados e passaram por uma varredura de padrÃƒÂµes de risco, listada no `SOURCES.md` de cada grupo).
 Como usar, escolher sÃƒÂ³ algumas e adicionar mais: veja `GUIA.md`.
 
@@ -317,3 +317,17 @@ Grupos 5 a 14 receberam mais skills e entraram 4 grupos novos (15 a 18). Nenhuma
 
 
 
+
+---
+
+# Atualização: skills de gosto e design (2026-10-27)
+
+Em **web-frontend** (agora 17 skills):
+- `taste-skill` (nome interno `design-taste-frontend`): direção de arte anti-"cara de template" para landing pages e telas de app. Versão completa do repositório original (scripts Node, biblioteca de direções, referências). Os scripts abrem Chrome/Edge em modo headless e guardam um histórico em `~/.taste-skill/`. O script `assets.mjs` acessa a internet; só rode se quiser baixar imagens.
+- `ui-ux-pro-max`: base local de design (estilos, paletas, pares de fontes, regras de UX, gráficos, 22 stacks) consultada por um script Python. Repositório original `nextlevelbuilder/ui-ux-pro-max-skill` (MIT). Não está no acervo; foi adicionada à mão.
+- A `impeccable` foi removida: a cópia do acervo era incompleta e a versão completa exige `npx impeccable`.
+
+## 19. landing-page (grupo novo, só comando)
+- `/landing-page:build <briefing>`: briefing até uma landing page pronta em um arquivo HTML. Usa skills de `design` e `web-frontend` (declaradas como dependências), então instale os três pelo marketplace.
+- Passos: direção de design, base de design (ui-ux-pro-max), direção de arte (taste-skill), tokens, página, revisão de UI e acessibilidade.
+- Testado 3 vezes com uma padaria. A versão final gerou a página, rodou os scripts `search.py`, `draw.mjs`, `inspect.mjs` e `lint.mjs` e não fez chamadas de rede. O inspetor deixou 2 falhas e 4 avisos abertos; ninguém abriu a página num navegador.

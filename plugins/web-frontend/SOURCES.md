@@ -24,8 +24,6 @@ Licenses: see ../../catalog/LICENSES.md.
 ## Local modifications
 
 - web-design-guidelines: original fetched rules from raw.githubusercontent.com on every run (unpinned third-party text, network). Replaced with a pinned, reviewed snapshot in `references/rules.md` (2026-10-27, MIT, license copy kept). Re-snapshot and re-review before updating.
-| taste-skill | taste-skill | >- | api key |
-| impeccable | impeccable | Use when the user wants to design, redesign, shape, critique, audit, polish, simplify, harden, animate, or otherwise improve a frontend i... | none |
 
 ## ui-ux-pro-max (external, not in the catalog)
 
@@ -34,3 +32,10 @@ Licenses: see ../../catalog/LICENSES.md.
 - Review: Python scripts read only (csv/json/re/argparse); no network, no subprocess, no eval. The only write is `--persist`, which writes `design-system/<project>/MASTER.md` inside the output dir you pass. Data files are CSV/JSON/MD; two lines mention `<script>` as UX advice, not instructions.
 - Needs Python 3 (`python`, `python3` or `py -3`). Running its scripts is risk Medium: use inside a project, review before approving `--persist`.
 - Local modification: command paths `${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/` replaced by `${CLAUDE_SKILL_DIR}/` to fit our layout. Re-apply when updating from upstream.
+
+## taste-skill (external full copy; the catalog copy was incomplete)
+
+- Source: https://github.com/Leonxlnx/taste-skill, folder `skills/taste-skill`, commit `12af471f627f866411b4bd785b19646d3672784c` (2026-10-25). MIT (copy in the skill folder). The catalog zip only had SKILL.md and README, without scripts, library or references, so it could not work; replaced with the full folder (39 files, 2.4 MB).
+- The skill's frontmatter name is `design-taste-frontend` (use that name to call it).
+- Review (scripts read, not run): Node 22 scripts. `draw.mjs` and `lib/app-draw.mjs` write a history file to `~/.taste-skill/history.json` (outside the project; set env `TASTE_SKILL_HISTORY` to redirect). `inspect.mjs`, `scenes.mjs`, `lib/cdp.mjs` start a local server on 127.0.0.1 and drive an installed Chrome/Edge headless (needs a browser, nothing remote). `assets.mjs` uses the network (Openverse, Wikimedia Commons) to download images: do not run it unless you want that. No eval of remote code found. Risk Medium (High for assets.mjs).
+- Removed from this group: `impeccable`. The catalog copy was a stub and the full upstream needs `npx impeccable` (runtime npm install) plus a 553 KB minified bundle that cannot be reviewed.

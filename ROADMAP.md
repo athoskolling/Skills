@@ -77,3 +77,5 @@ Teams in `registry/teams.yaml` are a first draft built from the index only. Keep
 - (2026-10-27) Duplicates cleaned: removed 65 nested copies in the gstack bundle and 2 gstack test fixtures (alpha, beta). Catalog is now 646 skills (index and zip match exactly). No duplicate names. Functional overlaps inside groups left as is (see GUIA.md).
 
 - (2026-10-27) Groups expanded with best-quality skills from the whole catalog (selected by source trust, hygiene filters and relevance; risky/Critical and MCP-dependent skills left out). Now 18 groups, 237 skills (new groups: web-frontend, languages, engineering-practices, mobile). All groups 5-18 untested.
+
+- (2026-10-27) landing-page group added; web-frontend got taste-skill (full upstream copy) and ui-ux-pro-max (external); impeccable removed. 19 groups, 239 skills. Work paused at the user's 45% usage rule: see PROGRESSO.md for requests, state and pending items.
