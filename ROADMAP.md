@@ -5,7 +5,7 @@
 | Phase | State | Approved on |
 |---|---|---|
 | 0. Base | Done. Catalog (648 skills, `catalog/index.csv`), registry, `registry/teams.yaml` (draft, 2026-10-27) and Git repo in place. | 2026-10-27 (user: "pode continuar") |
-| 1. Software dev vertical path | Built, awaiting Claude Code run of 3 cases (`evaluations/software-dev/cases.md`) | - |
+| 1. Software dev vertical path | Built; 3 cases run in Claude Code (2 pass, 1 partial). Awaiting your approval | - |
 | 2. Cowork validation | Not started | - |
 | 3. Other domains | Blocked until 0, 1, 2 approved | - |
 
@@ -52,3 +52,6 @@ Teams in `registry/teams.yaml` are a first draft built from the index only. Keep
 - Check licenses before redistributing skills publicly (the repo is public).
 - Every change to `teams.yaml` needs user approval (PROMPT_MESTRE 10-A).
 - Work method: one commit per change, pushed to GitHub, so the history shows how the organization evolves.
+
+- (2026-10-27) Phase 1 eval: cases 1-3 ran in Claude Code (see evaluations/software-dev/cases.md). Open: add a hard-bug case to exercise diagnosing-bugs; check that tdd is actually used in every run; check what code-review returns.
+
