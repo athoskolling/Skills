@@ -6,8 +6,8 @@
 |---|---|---|
 | 0. Base | Done. Catalog (648 skills, `catalog/index.csv`), registry, `registry/teams.yaml` (draft, 2026-10-27) and Git repo in place. | 2026-10-27 (user: "pode continuar") |
 | 1. Software dev vertical path | Done. Built; 3 cases run in Claude Code (2 pass, 1 partial). | 2026-10-27 (user: "aprovado e pode continuar") |
-| 2. Cowork validation | In progress: zip built; manual install test in Cowork pending | - |
-| 3. Other domains | Blocked until 0, 1, 2 approved | - |
+| 2. Cowork validation | Deferred: Cowork unavailable to the user. Zip built; install test pending (see DECISIONS, Rodada 8) | - |
+| 3. Other domains | Allowed to start by user exception (DECISIONS, Rodada 8). Order: research-synthesis, design, presentations | - |
 
 Last task (Phase 1): built plugins/software-dev (implement, tdd, diagnosing-bugs, code-review; `spec` dropped per teams.yaml note), command dev-flow, scripts/install.ps1 (dry-run default, manifest, rollback; verified in sandbox), marketplace.json. `claude plugin validate` ok.`nNext: run the 3 cases in Claude Code, record results, then ask for Phase 1 approval. Not done yet: end-to-end run, Cowork (Phase 2), Codex format.`n`nPrevious task: close Phase 0 (`teams.yaml` placeholder fixed to gstack `spec`, `git init`, first commit).
 Next task: Phase 1, in a new session (one phase per session): controlled installer, plugin with 2-4 skills, one workflow, test cases, rollback.
@@ -54,6 +54,7 @@ Teams in `registry/teams.yaml` are a first draft built from the index only. Keep
 - Work method: one commit per change, pushed to GitHub, so the history shows how the organization evolves.
 
 - (2026-10-27) Phase 1 eval: cases 1-3 ran in Claude Code (see evaluations/software-dev/cases.md). Case 4 added and diagnosing-bugs verified once (dev-flow step 0 added). Open: check that tdd is actually used in every run; check what code-review returns.
+
 
 
 

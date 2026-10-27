@@ -69,3 +69,9 @@ Ver a especificaÃ§Ã£o de contexto fornecida pelo usuÃ¡rio. Resumo dos pontos que
 - Cowork: plugins instalÃ¡veis a partir de marketplace, repositÃ³rio Git ou arquivo; plugins com `bin/` nÃ£o sÃ£o instalados no claude.ai e no Cowork. Fonte: https://claude.com/docs/cowork/guide/plugins.md
 
 Nada disso foi testado na prÃ¡tica ainda.
+
+## Rodada 8 (exceção à ordem das fases, 2026-10-27)
+
+- **Fase 2 (Cowork) adiada.** O usuário não tem acesso ao Cowork agora. A Fase 3 pode começar sem a Fase 2 aprovada (exceção à seção 13 do prompt mestre, autorizada pelo usuário: "continuar e depois testar qualquer coisa no cowork").
+- **Regra durante a exceção:** nenhum plugin é marcado como compatível com o Cowork nem sobe de nível para Production-ready. Tudo fica "Cowork: não verificado".
+- **Pendência:** quando o Cowork estiver disponível, instalar os zips (`scripts/install.ps1 -Mode zip`), rodar o workflow de cada plugin e registrar o resultado.
