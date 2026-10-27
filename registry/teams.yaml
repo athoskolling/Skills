@@ -35,11 +35,11 @@ teams:
       - { order: 3, skill: accessibility,             resource: ecc, role: "WCAG 2.2 AA check" }
     rejected: "frontend-a11y (React/Next only), theme-factory (preset themes, not a spec from a briefing)"
     fallback: "design-consultation (gstack) if design-system does not fit a new briefing"
-  presentations:               # Phase 3
-    status: draft
+  presentations:               # Phase 3, approved 2026-10-27 (user: "tudo que tu for fazer ta aprovado")
+    status: draft              # skills are candidate until reviewed/tested
+    agents: single
     skills:
-      - { skill: frontend-slides, resource: ecc,                       role: "slide structure" }
-      - { skill: writing-shape,   resource: matt-pocock-skills,        role: "content structuring" }
-      - { skill: brand-guidelines, resource: anthropic-skills-official, role: "consistency review" }
-
-
+      - { order: 1, skill: writing-beats,     resource: matt-pocock-skills, role: "content -> journey of beats (slide outline)" }
+      - { order: 2, skill: frontend-slides,   resource: ecc,                role: "beats -> slide structure / HTML deck" }
+      - { order: 3, skill: writing-guidelines, resource: vercel-agent-skills, role: "review slide text against writing guidelines" }
+    rejected: "brand-guidelines (applies Anthropic brand only), writing-shape (article-oriented), investor-materials (pitch decks only)"
