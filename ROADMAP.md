@@ -58,3 +58,6 @@ Teams in `registry/teams.yaml` are a first draft built from the index only. Keep
 
 
 
+
+- (2026-10-27) Phase 3, research-synthesis: plugin built, 3 cases PASS in Claude Code (evaluations/research-synthesis/cases.md). Cowork: not verified. Next domain: design (needs user approval of the team, then same process).
+
