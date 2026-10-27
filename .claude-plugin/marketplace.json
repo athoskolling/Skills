@@ -93,6 +93,11 @@
                         "name":  "mobile",
                         "source":  "./plugins/mobile",
                         "description":  "mobile (untested)"
+                    },
+                    {
+                        "name":  "landing-page",
+                        "source":  "./plugins/landing-page",
+                        "description":  "Briefing to finished landing page (needs design + web-frontend)"
                     }
                 ],
     "description":  "Personal skills ecosystem (MVP)"

@@ -23,7 +23,9 @@ function Say($m){ Write-Host ($(if($Apply){''}else{'[dry-run] '}) + $m) }
 
 if ($List) {
   foreach ($p in $all) {
-    $names = Get-ChildItem (Join-Path $root "plugins\$p\skills") -Directory | ForEach-Object Name
+    $sd = Join-Path $root "plugins\$p\skills"
+    if (-not (Test-Path $sd)) { "{0}: (command only, no skills; needs the plugins in its dependencies)" -f $p; continue }
+    $names = Get-ChildItem $sd -Directory | ForEach-Object Name
     "{0}: {1}" -f $p, ($names -join ', ')
   }
   return
@@ -57,6 +59,7 @@ foreach ($name in $targets) {
     continue
   }
 
+  if (-not (Test-Path "$plugin\skills")) { Write-Host "$name has no skills of its own (workflow command only): install it through the marketplace together with its dependencies. Skipping."; continue }
   if (Test-Path $state) { throw "$name already installed at $Path (record exists). Run -Rollback first." }
   $created=@(); $backups=@(); $dirs=@()
   $skillDirs = Get-ChildItem "$plugin\skills" -Directory | Where-Object { -not $Skill -or $Skill -contains $_.Name }

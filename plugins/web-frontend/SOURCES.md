@@ -20,3 +20,7 @@ Licenses: see ../../catalog/LICENSES.md.
 | theme-factory | anthropic-skills-official | Toolkit for styling artifacts with a theme. | none |
 | react-view-transitions | vercel-agent-skills | Guide for implementing smooth, native-feeling animations using React's View Transition API (`<ViewTransition>` component, `addTransitionT... | none |
 | angular-architect | jeffallan-claude-skills | Generates Angular 17+ standalone components, configures advanced routing with lazy loading and guards, implements NgRx state management, ... | none |
+
+## Local modifications
+
+- web-design-guidelines: original fetched rules from raw.githubusercontent.com on every run (unpinned third-party text, network). Replaced with a pinned, reviewed snapshot in `references/rules.md` (2026-10-27, MIT, license copy kept). Re-snapshot and re-review before updating.
