@@ -15,8 +15,8 @@ Licenses: see ../../catalog/LICENSES.md.
 | spec-miner | jeffallan-claude-skills | Reverse-engineering specialist that extracts specifications from existing codebases. | .py, allowed-tools |
 | systematic-debugging | superpowers | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes | none |
 | debugging-wizard | jeffallan-claude-skills | Parses error messages, traces execution flow through stack traces, correlates log entries to identify failure points, and applies systema... | .py |
-| code-tour | ecc | Create CodeTour `.tour` files â€” persona-targeted, step-by-step walkthroughs with real file and line anchors. | none |
+| code-tour | ecc | Create CodeTour `.tour` files — persona-targeted, step-by-step walkthroughs with real file and line anchors. | none |
 | inherit-legacy-style | ecc | Prevent AI style drift on legacy projects by scanning the codebase for implicit conventions, resolving conflicts with the operator one at... | allowed-tools |
 | diagramming-code | trail-of-bits-skills | > | .py |
-| code-improver | trail-of-bits-skills | Runs an autonomous review-and-fix improvement loop over any code target â€” a skill, plugin, module, or directory â€” using a reviewer th... | allowed-tools |
+| code-improver | trail-of-bits-skills | Runs an autonomous review-and-fix improvement loop over any code target — a skill, plugin, module, or directory — using a reviewer th... | allowed-tools |
 | pr | matt-pocock-skills | Use when writing a PR body. | none |

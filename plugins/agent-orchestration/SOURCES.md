@@ -26,11 +26,11 @@ Licenses: see ../../catalog/LICENSES.md.
 | strategic-compact | ecc | Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction. | .sh, mcp |
 | plan-eng-review | gstack | Eng manager-mode plan review. | .sh, allowed-tools, mcp |
 | plan-ceo-review | gstack | CEO/founder-mode plan review. | .sh, allowed-tools, mcp |
-| plan-design-review | gstack | Designer's eye plan review â€” interactive, like CEO and Eng review. | allowed-tools, api key, curl, mcp, rm -rf |
+| plan-design-review | gstack | Designer's eye plan review — interactive, like CEO and Eng review. | allowed-tools, api key, curl, mcp, rm -rf |
 | blueprint | ecc | Turn a one-line objective into a step-by-step construction plan for multi-session, multi-agent engineering projects: one-PR-sized steps w... | none |
 | council | ecc | Convene a four-voice council for ambiguous decisions, tradeoffs, and go/no-go calls. | none |
 | search-first | ecc | Research-before-coding workflow: search npm/PyPI, MCP servers, skills, and GitHub for existing tools before writing custom code, then ado... | mcp, npm i |
-| verification-loop | ecc | Run a six-phase verification of a Claude Code session's work â€” build, type check, lint, tests with coverage, security grep, and diff re... | api_key, npx |
+| verification-loop | ecc | Run a six-phase verification of a Claude Code session's work — build, type check, lint, tests with coverage, security grep, and diff re... | api_key, npx |
 | skill-creator | anthropic-skills-official | Create new skills, modify and improve existing skills, and measure skill performance. | .py, mcp |
 | writing-skills | superpowers | Use when creating new skills, editing existing skills, or verifying skills work before deployment | .py, .sh |
 | prototype | matt-pocock-skills | Build a throwaway prototype to answer a design question. | none |

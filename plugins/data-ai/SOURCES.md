@@ -15,9 +15,9 @@ Licenses: see ../../catalog/LICENSES.md.
 | pytorch-patterns | ecc | PyTorch deep learning patterns and best practices for building robust, efficient, and reproducible training pipelines, model architecture... | none |
 | fine-tuning-expert | jeffallan-claude-skills | Use when fine-tuning LLMs, training custom models, or adapting foundation models for specific tasks. | .py |
 | mle-workflow | ecc | Production machine-learning engineering workflow for data contracts, reproducible training, model evaluation, deployment, monitoring, and... | none |
-| eval-harness | ecc | Eval-driven development (EDD) framework for AI coding sessions â€” define capability and regression evals before coding, grade with code-... | none |
+| eval-harness | ecc | Eval-driven development (EDD) framework for AI coding sessions — define capability and regression evals before coding, grade with code-... | none |
 | iterative-retrieval | ecc | Pattern for progressively refining context retrieval to solve the subagent context problem. | none |
-| regex-vs-llm-structured-text | ecc | Decision framework for parsing structured text (quizzes, forms, invoices, receipts, tables) with a hybrid regex-first pipeline â€” regex ... | none |
+| regex-vs-llm-structured-text | ecc | Decision framework for parsing structured text (quizzes, forms, invoices, receipts, tables) with a hybrid regex-first pipeline — regex ... | none |
 | token-budget-advisor | ecc | Offer a choice of response depth (25%/50%/75%/100%) with token estimates before answering, then answer at that level. | none |
 | spark-engineer | jeffallan-claude-skills | Use when writing Spark jobs, debugging performance issues, or configuring cluster settings for Apache Spark applications, distributed dat... | none |
 | dashboard-builder | ecc | Build monitoring dashboards that answer real operator questions for Grafana, SigNoz, and similar platforms. | none |

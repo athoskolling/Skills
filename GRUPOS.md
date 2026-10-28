@@ -1,81 +1,81 @@
 # Grupos de skills
 
 19 grupos, 239 skills (o acervo completo tem 646; o resto fica em `catalog/` para consulta).
-Estado: os 4 primeiros foram testados no Claude Code. Os outros 10 **nÃƒÂ£o foram testados** (sÃƒÂ³ selecionados e passaram por uma varredura de padrÃƒÂµes de risco, listada no `SOURCES.md` de cada grupo).
-Como usar, escolher sÃƒÂ³ algumas e adicionar mais: veja `GUIA.md`.
+Estado: os 4 primeiros foram testados no Claude Code. Os outros 10 **não foram testados** (só selecionados e passaram por uma varredura de padrões de risco, listada no `SOURCES.md` de cada grupo).
+Como usar, escolher só algumas e adicionar mais: veja `GUIA.md`.
 
 ## Testados
 
-### 1. software-dev: escrever e revisar cÃƒÂ³digo
+### 1. software-dev: escrever e revisar código
 - `implement`: implementa a partir de uma spec ou ticket, usando `tdd` e `code-review`.
 - `tdd`: desenvolvimento guiado por testes (teste primeiro).
-- `diagnosing-bugs`: acha a causa raiz de bug difÃƒÂ­cil antes de mexer no cÃƒÂ³digo.
+- `diagnosing-bugs`: acha a causa raiz de bug difícil antes de mexer no código.
 - `code-review`: revisa o diff e aponta problemas.
 - Comando: `/software-dev:dev-flow <tarefa>`
 
-### 2. research-synthesis: pergunta atÃƒÂ© relatÃƒÂ³rio com fontes
-- `research`: investiga em fontes primÃƒÂ¡rias e salva as notas.
-- `scientific-thinking-scholar-evaluation`: avalia se as fontes sustentam cada afirmaÃƒÂ§ÃƒÂ£o.
-- `article-writing`: escreve o relatÃƒÂ³rio final com citaÃƒÂ§ÃƒÂµes.
+### 2. research-synthesis: pergunta até relatório com fontes
+- `research`: investiga em fontes primárias e salva as notas.
+- `scientific-thinking-scholar-evaluation`: avalia se as fontes sustentam cada afirmação.
+- `article-writing`: escreve o relatório final com citações.
 - Comando: `/research-synthesis:report <pergunta>`
 
-### 3. design: briefing atÃƒÂ© especificaÃƒÂ§ÃƒÂ£o
-- `frontend-design-direction`: transforma o briefing em direÃƒÂ§ÃƒÂ£o de design.
-- `design-system`: define tokens (cores, tipografia, espaÃƒÂ§amento) e componentes.
+### 3. design: briefing até especificação
+- `frontend-design-direction`: transforma o briefing em direção de design.
+- `design-system`: define tokens (cores, tipografia, espaçamento) e componentes.
 - `accessibility`: confere contra WCAG 2.2 AA.
 - Comando: `/design:spec <briefing>`
 
-### 4. presentations: conteÃƒÂºdo atÃƒÂ© slides
-- `writing-beats`: organiza o conteÃƒÂºdo em sequÃƒÂªncia de ideias.
-- `frontend-slides`: monta os slides num HTML ÃƒÂºnico.
+### 4. presentations: conteúdo até slides
+- `writing-beats`: organiza o conteúdo em sequência de ideias.
+- `frontend-slides`: monta os slides num HTML único.
 - `writing-guidelines`: revisa o texto (regras fixas guardadas no plugin).
-- Comando: `/presentations:deck <conteÃƒÂºdo>`
+- Comando: `/presentations:deck <conteúdo>`
 
-## NÃƒÂ£o testados
+## Não testados
 
-### 5. security-audit: seguranÃƒÂ§a de cÃƒÂ³digo
-- `security-review`: checklist de seguranÃƒÂ§a ao mexer em autenticaÃƒÂ§ÃƒÂ£o, entrada de usuÃƒÂ¡rio, segredos e APIs.
-- `security-reviewer`: acha vulnerabilidades e gera relatÃƒÂ³rio com severidade.
-- `secure-code-guardian`: guia para implementar autenticaÃƒÂ§ÃƒÂ£o e evitar o OWASP Top 10.
-- `audit-context-building`: entende o cÃƒÂ³digo antes de procurar bugs.
-- `variant-analysis`: depois de achar um bug, procura outros iguais no cÃƒÂ³digo.
-- `sharp-edges`: aponta APIs e configuraÃƒÂ§ÃƒÂµes que levam a erro de seguranÃƒÂ§a.
-- `supply-chain-risk-auditor`: audita risco nas dependÃƒÂªncias.
+### 5. security-audit: segurança de código
+- `security-review`: checklist de segurança ao mexer em autenticação, entrada de usuário, segredos e APIs.
+- `security-reviewer`: acha vulnerabilidades e gera relatório com severidade.
+- `secure-code-guardian`: guia para implementar autenticação e evitar o OWASP Top 10.
+- `audit-context-building`: entende o código antes de procurar bugs.
+- `variant-analysis`: depois de achar um bug, procura outros iguais no código.
+- `sharp-edges`: aponta APIs e configurações que levam a erro de segurança.
+- `supply-chain-risk-auditor`: audita risco nas dependências.
 
-### 6. qa-release: testes e verificaÃƒÂ§ÃƒÂ£o antes de entregar
+### 6. qa-release: testes e verificação antes de entregar
 - `e2e-testing`: testes ponta a ponta com Playwright.
 - `property-based-testing`: testes por propriedades (Hypothesis, fast-check etc.).
 - `mutation-testing`: mede a qualidade dos testes com mutantes (precisa das ferramentas mewt/muton).
-- `test-master`: estratÃƒÂ©gia geral de testes.
-- `verification-before-completion`: obriga rodar a verificaÃƒÂ§ÃƒÂ£o antes de dizer que terminou.
+- `test-master`: estratégia geral de testes.
+- `verification-before-completion`: obriga rodar a verificação antes de dizer que terminou.
 - `canary-watch`: monitora uma URL depois do deploy.
 - `finishing-a-development-branch`: decide como integrar o trabalho (merge, PR, descarte).
 
 ### 7. devops-infra: infraestrutura e deploy
-- `docker-patterns`: Docker e Compose, com seguranÃƒÂ§a.
+- `docker-patterns`: Docker e Compose, com segurança.
 - `kubernetes-patterns`: workloads, recursos, probes, RBAC.
-- `terraform-engineer`: infraestrutura como cÃƒÂ³digo (AWS, Azure, GCP).
+- `terraform-engineer`: infraestrutura como código (AWS, Azure, GCP).
 - `deployment-patterns`: CI/CD, health checks, rollback.
 - `devops-engineer`: cria Dockerfiles, pipelines e manifests.
 - `monitoring-expert`: logs estruturados, Prometheus/Grafana.
-- `sre-engineer`: SLOs, orÃƒÂ§amento de erro, resposta a incidentes.
+- `sre-engineer`: SLOs, orçamento de erro, resposta a incidentes.
 
 ### 8. database: bancos de dados
-- `database-migrations`: migraÃƒÂ§ÃƒÂµes seguras e reversÃƒÂ­veis.
+- `database-migrations`: migrações seguras e reversíveis.
 - `database-optimizer`: otimiza consultas (PostgreSQL e MySQL).
-- `postgres-patterns`: modelagem, ÃƒÂ­ndices e seguranÃƒÂ§a no PostgreSQL.
+- `postgres-patterns`: modelagem, índices e segurança no PostgreSQL.
 - `mysql-patterns`: o mesmo para MySQL/MariaDB.
 - `sql-pro`: escreve e otimiza SQL, desenha esquemas.
 - `redis-patterns`: cache, locks, rate limiting, pub/sub.
 - `prisma-patterns`: Prisma ORM em TypeScript.
 
 ### 9. apis-mcp: APIs e servidores MCP
-- `api-design`: padrÃƒÂµes REST (nomes, status, paginaÃƒÂ§ÃƒÂ£o, erros).
-- `api-designer`: desenha REST/GraphQL e especificaÃƒÂ§ÃƒÂµes OpenAPI.
+- `api-design`: padrões REST (nomes, status, paginação, erros).
+- `api-designer`: desenha REST/GraphQL e especificações OpenAPI.
 - `graphql-architect`: esquemas GraphQL e Apollo Federation.
-- `fastapi-patterns`: boas prÃƒÂ¡ticas de FastAPI.
+- `fastapi-patterns`: boas práticas de FastAPI.
 - `mcp-builder`: guia oficial para criar servidores MCP.
-- `mcp-developer`: constrÃƒÂ³i e depura servidores e clientes MCP.
+- `mcp-developer`: constrói e depura servidores e clientes MCP.
 - `mcp-server-patterns`: servidores MCP com Node/TypeScript.
 - `claude-api`: usar a API da Claude e o SDK (modelos, streaming, ferramentas).
 
@@ -86,48 +86,48 @@ Como usar, escolher sÃƒÂ³ algumas e adicionar mais: veja `GUIA.md`.
 - `cost-aware-llm-pipeline`: roteamento por modelo e controle de custo de LLM.
 - `rag-architect`: sistemas RAG (chunking, embeddings, busca).
 - `ml-pipeline`: pipelines de ML com rastreio de experimentos.
-- `pandas-pro`: anÃƒÂ¡lise de dados com pandas.
+- `pandas-pro`: análise de dados com pandas.
 - `pytorch-patterns`: treino de modelos em PyTorch.
 
-### 11. docs-writing: documentaÃƒÂ§ÃƒÂ£o e escrita
-- `doc-coauthoring`: escrever documentos em etapas, com o usuÃƒÂ¡rio.
-- `code-documenter`: docstrings, OpenAPI e documentaÃƒÂ§ÃƒÂ£o tÃƒÂ©cnica.
-- `docs-governance`: auditoria sÃƒÂ³ de leitura da documentaÃƒÂ§ÃƒÂ£o do projeto.
+### 11. docs-writing: documentação e escrita
+- `doc-coauthoring`: escrever documentos em etapas, com o usuário.
+- `code-documenter`: docstrings, OpenAPI e documentação técnica.
+- `docs-governance`: auditoria só de leitura da documentação do projeto.
 - `brand-voice`: extrai o estilo de escrita de textos reais.
 - `writing-fragments`: junta fragmentos soltos, sem estrutura ainda.
-- `writing-shape`: transforma o material em artigo, parÃƒÂ¡grafo a parÃƒÂ¡grafo.
+- `writing-shape`: transforma o material em artigo, parágrafo a parágrafo.
 - `internal-comms`: comunicados internos nos formatos da empresa.
 - `seo`: auditoria e melhorias de SEO.
 
 ### 12. agent-orchestration: planejar e dividir trabalho
 - `brainstorming`: explora a ideia antes de criar algo.
 - `grill-me`: entrevista dura para fortalecer um plano.
-- `to-spec`: transforma a conversa em especificaÃƒÂ§ÃƒÂ£o.
-- `to-tickets`: quebra o plano em tickets com dependÃƒÂªncias.
-- `writing-plans`: escreve o plano de implementaÃƒÂ§ÃƒÂ£o antes de codar.
+- `to-spec`: transforma a conversa em especificação.
+- `to-tickets`: quebra o plano em tickets com dependências.
+- `writing-plans`: escreve o plano de implementação antes de codar.
 - `executing-plans`: executa um plano passo a passo.
 - `subagent-driven-development`: executa o plano com subagentes.
 - `dispatching-parallel-agents`: roda tarefas independentes em paralelo.
-- `planning-with-files`: planejamento persistente em arquivos (os scripts auxiliares dele nÃƒÂ£o foram copiados).
+- `planning-with-files`: planejamento persistente em arquivos (os scripts auxiliares dele não foram copiados).
 - `handoff`: resume a conversa para outro agente continuar.
 
 ### 13. learning: aprender e ensinar
 - `learn`: registra aprendizados do projeto.
 - `teach`: ensina um conceito dentro do projeto.
 - `socratic-tutors`: ensina por perguntas, sem dar a resposta direta.
-- `scaffold-exercises`: monta pastas de exercÃƒÂ­cios com problemas e soluÃƒÂ§ÃƒÂµes.
-- `codebase-onboarding`: guia de entrada para um cÃƒÂ³digo desconhecido.
+- `scaffold-exercises`: monta pastas de exercícios com problemas e soluções.
+- `codebase-onboarding`: guia de entrada para um código desconhecido.
 
-### 14. business-ops: anÃƒÂ¡lise e operaÃƒÂ§ÃƒÂ£o
+### 14. business-ops: análise e operação
 - `competitive-platform-analysis`: mapeia e pontua concorrentes.
-- `competitive-report-structure`: monta o relatÃƒÂ³rio competitivo.
+- `competitive-report-structure`: monta o relatório competitivo.
 - `project-flow-ops`: triagem de issues e PRs (GitHub e Linear).
-- `github-ops`: operaÃƒÂ§ÃƒÂµes no repositÃƒÂ³rio GitHub.
-- `knowledge-ops`: gestÃƒÂ£o e busca em base de conhecimento.
-- `growth-log`: registra padrÃƒÂµes reutilizÃƒÂ¡veis do trabalho concluÃƒÂ­do.
+- `github-ops`: operações no repositório GitHub.
+- `knowledge-ops`: gestão e busca em base de conhecimento.
+- `growth-log`: registra padrões reutilizáveis do trabalho concluído.
 
-## Ficaram de fora de propÃƒÂ³sito
-Skills que enviam mensagens, fazem cobranÃƒÂ§a ou prospecÃƒÂ§ÃƒÂ£o (risco CrÃƒÂ­tico), as que dependem de fuzzers e scanners externos, as obsoletas (`continuous-learning`) e as de nicho (homelab, energia, logÃƒÂ­stica). Continuam em `catalog/`.
+## Ficaram de fora de propósito
+Skills que enviam mensagens, fazem cobrança ou prospecção (risco Crítico), as que dependem de fuzzers e scanners externos, as obsoletas (`continuous-learning`) e as de nicho (homelab, energia, logística). Continuam em `catalog/`.
 
 
 ---
@@ -155,7 +155,7 @@ Grupos 5 a 14 receberam mais skills e entraram 4 grupos novos (15 a 18). Nenhuma
 - `ai-regression-testing`: Regression testing strategies for AI-assisted development.
 - `benchmark`: Web performance regression detection.
 - `browser-qa`: Run automated post-deploy UI verification with a browser automation MCP (claude-in-chrome, Playwright, or Puppeteer): console-e...
-- `chaos-engineer`: Designs chaos experiments, creates failure injection frameworks, and facilitates game day exercises for distributed systems â€”...
+- `chaos-engineer`: Designs chaos experiments, creates failure injection frameworks, and facilitates game day exercises for distributed systems —...
 - `hunt-regressions`: Use when discovering possible regressions from a pinned change and its callers before reproduction.
 - `playwright-expert`: Use when writing E2E tests with Playwright, setting up test infrastructure, or debugging flaky browser tests.
 - `qa-only`: Report browser/API/CLI/job/worker/webhook bugs.
@@ -190,7 +190,7 @@ Grupos 5 a 14 receberam mais skills e entraram 4 grupos novos (15 a 18). Nenhuma
 
 ## data-ai (skills adicionadas)
 - `dashboard-builder`: Build monitoring dashboards that answer real operator questions for Grafana, SigNoz, and similar platforms.
-- `eval-harness`: Eval-driven development (EDD) framework for AI coding sessions â€” define capability and regression evals before coding, grade ...
+- `eval-harness`: Eval-driven development (EDD) framework for AI coding sessions — define capability and regression evals before coding, grade ...
 - `fine-tuning-expert`: Use when fine-tuning LLMs, training custom models, or adapting foundation models for specific tasks.
 - `goal-prompt`: Drafts copy-paste-ready /goal commands for goal mode in Claude Code and Codex.
 - `iterative-retrieval`: Pattern for progressively refining context retrieval to solve the subagent context problem.
@@ -218,7 +218,7 @@ Grupos 5 a 14 receberam mais skills e entraram 4 grupos novos (15 a 18). Nenhuma
 - `grilling`: Grill the user relentlessly about a plan, decision, or idea.
 - `grill-with-docs`: A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.
 - `plan-ceo-review`: CEO/founder-mode plan review.
-- `plan-design-review`: Designer's eye plan review â€” interactive, like CEO and Eng review.
+- `plan-design-review`: Designer's eye plan review — interactive, like CEO and Eng review.
 - `plan-eng-review`: Eng manager-mode plan review.
 - `prototype`: Build a throwaway prototype to answer a design question.
 - `search-first`: Research-before-coding workflow: search npm/PyPI, MCP servers, skills, and GitHub for existing tools before writing custom code...
@@ -227,7 +227,7 @@ Grupos 5 a 14 receberam mais skills e entraram 4 grupos novos (15 a 18). Nenhuma
 - `to-questionnaire`: Turn a decision you can't fully answer into a questionnaire for someone else to fill in.
 - `triage`: Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-read...
 - `using-git-worktrees`: Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures a...
-- `verification-loop`: Run a six-phase verification of a Claude Code session's work â€” build, type check, lint, tests with coverage, security grep, a...
+- `verification-loop`: Run a six-phase verification of a Claude Code session's work — build, type check, lint, tests with coverage, security grep, a...
 - `wayfinder`: Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and...
 - `wizard`: Generate an interactive bash wizard that walks a human through steps only they can perform.
 - `writing-skills`: Use when creating new skills, editing existing skills, or verifying skills work before deployment
@@ -289,9 +289,9 @@ Grupos 5 a 14 receberam mais skills e entraram 4 grupos novos (15 a 18). Nenhuma
 ## engineering-practices (grupo novo)
 - `architecture-decision-records`: Capture architectural decisions as numbered ADR markdown files in docs/adr/ with context, alternatives considered, consequences...
 - `architecture-designer`: Use when designing new high-level system architecture, reviewing existing designs, or making architectural decisions.
-- `code-improver`: Runs an autonomous review-and-fix improvement loop over any code target â€” a skill, plugin, module, or directory â€” using a r...
+- `code-improver`: Runs an autonomous review-and-fix improvement loop over any code target — a skill, plugin, module, or directory — using a r...
 - `code-maturity-assessor`: Systematic code maturity assessment using Trail of Bits' 9-category framework.
-- `code-tour`: Create CodeTour `.tour` files â€” persona-targeted, step-by-step walkthroughs with real file and line anchors.
+- `code-tour`: Create CodeTour `.tour` files — persona-targeted, step-by-step walkthroughs with real file and line anchors.
 - `debugging-wizard`: Parses error messages, traces execution flow through stack traces, correlates log entries to identify failure points, and appli...
 - `diagramming-code`: (veja o SKILL.md)
 - `hexagonal-architecture`: Design, implement, and refactor Ports & Adapters systems with clear domain boundaries, dependency inversion, and testable use-c...
@@ -304,15 +304,15 @@ Grupos 5 a 14 receberam mais skills e entraram 4 grupos novos (15 a 18). Nenhuma
 - `systematic-debugging`: Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes
 
 ## mobile (grupo novo)
-- `android-clean-architecture`: Clean Architecture patterns for Android and Kotlin Multiplatform projects â€” module structure, dependency rules, UseCases, Rep...
-- `compose-multiplatform-patterns`: Compose Multiplatform and Jetpack Compose patterns for KMP projects â€” state management, navigation, theming, performance, and...
+- `android-clean-architecture`: Clean Architecture patterns for Android and Kotlin Multiplatform projects — module structure, dependency rules, UseCases, Rep...
+- `compose-multiplatform-patterns`: Compose Multiplatform and Jetpack Compose patterns for KMP projects — state management, navigation, theming, performance, and...
 - `dart-flutter-patterns`: Production-ready Dart and Flutter patterns covering null safety, immutable state with Freezed, async composition, widget archit...
 - `flutter-expert`: Use when building cross-platform applications with Flutter 3+ and Dart.
-- `kotlin-coroutines-flows`: Kotlin Coroutines and Flow patterns for Android and KMP â€” structured concurrency, Flow operators, StateFlow, error handling, ...
+- `kotlin-coroutines-flows`: Kotlin Coroutines and Flow patterns for Android and KMP — structured concurrency, Flow operators, StateFlow, error handling, ...
 - `kotlin-patterns`: Idiomatic Kotlin patterns, best practices, and conventions for building robust, efficient, and maintainable Kotlin applications...
 - `react-native-expert`: Builds, optimizes, and debugs cross-platform mobile applications with React Native and Expo.
-- `react-native-patterns`: React Native and Expo app patterns â€” Expo Router navigation, state separation (server/client/route/form), TanStack Query data...
-- `swift-concurrency-6-2`: Swift 6.2 Approachable Concurrency â€” single-threaded by default, @concurrent for explicit background offloading, isolated con...
+- `react-native-patterns`: React Native and Expo app patterns — Expo Router navigation, state separation (server/client/route/form), TanStack Query data...
+- `swift-concurrency-6-2`: Swift 6.2 Approachable Concurrency — single-threaded by default, @concurrent for explicit background offloading, isolated con...
 - `swiftui-patterns`: SwiftUI architecture patterns, state management with @Observable, view composition, navigation, performance optimization, and m...
 
 

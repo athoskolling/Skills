@@ -70,8 +70,8 @@ Ver a especifica√ß√£o de contexto fornecida pelo usu√°rio. Resumo dos pontos que
 
 Nada disso foi testado na pr√°tica ainda.
 
-## Rodada 8 (exceÁ„o ‡ ordem das fases, 2026-10-27)
+## Rodada 8 (exce√ß√£o √† ordem das fases, 2026-10-27)
 
-- **Fase 2 (Cowork) adiada.** O usu·rio n„o tem acesso ao Cowork agora. A Fase 3 pode comeÁar sem a Fase 2 aprovada (exceÁ„o ‡ seÁ„o 13 do prompt mestre, autorizada pelo usu·rio: "continuar e depois testar qualquer coisa no cowork").
-- **Regra durante a exceÁ„o:** nenhum plugin È marcado como compatÌvel com o Cowork nem sobe de nÌvel para Production-ready. Tudo fica "Cowork: n„o verificado".
-- **PendÍncia:** quando o Cowork estiver disponÌvel, instalar os zips (`scripts/install.ps1 -Mode zip`), rodar o workflow de cada plugin e registrar o resultado.
+- **Fase 2 (Cowork) adiada.** O usu√°rio n√£o tem acesso ao Cowork agora. A Fase 3 pode come√ßar sem a Fase 2 aprovada (exce√ß√£o √† se√ß√£o 13 do prompt mestre, autorizada pelo usu√°rio: "continuar e depois testar qualquer coisa no cowork").
+- **Regra durante a exce√ß√£o:** nenhum plugin √© marcado como compat√≠vel com o Cowork nem sobe de n√≠vel para Production-ready. Tudo fica "Cowork: n√£o verificado".
+- **Pend√™ncia:** quando o Cowork estiver dispon√≠vel, instalar os zips (`scripts/install.ps1 -Mode zip`), rodar o workflow de cada plugin e registrar o resultado.
