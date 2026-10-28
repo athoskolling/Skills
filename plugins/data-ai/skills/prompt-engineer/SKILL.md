@@ -11,7 +11,7 @@ metadata:
   role: expert
   scope: design
   output-format: document
-  related-skills: test-master, rag-architect, debugging-wizard
+  related-skills: test-master, rag-architect, diagnosing-bugs
 ---
 
 # Prompt Engineer

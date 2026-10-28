@@ -1,9 +1,0 @@
-{
-    "name":  "apis-mcp",
-    "version":  "0.1.0",
-    "license":  "see SOURCES.md",
-    "description":  "Design APIs and build MCP servers. Skills are untested candidates.",
-    "author":  {
-                   "name":  "Athos Kolling"
-               }
-}

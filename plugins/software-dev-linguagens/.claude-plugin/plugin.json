@@ -1,0 +1,9 @@
+{
+  "name": "software-dev-linguagens",
+  "version": "0.1.0",
+  "license": "see SOURCES.md",
+  "description": "Language and framework subgroup of software-dev: TypeScript, Python, JavaScript, Go, Rust and Java. Skills are candidates, untested.",
+  "author": {
+    "name": "Athos Kolling"
+  }
+}

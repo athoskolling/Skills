@@ -1,8 +1,0 @@
-{
-  "name": "landing-page",
-  "version": "0.1.0",
-  "license": "see SOURCES.md",
-  "description": "Briefing to a finished single-file landing page: design direction, tokens, build, UI and accessibility review. Uses skills from the design and web-frontend plugins.",
-  "author": { "name": "Athos Kolling" },
-  "dependencies": ["design", "web-frontend"]
-}

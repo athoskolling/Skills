@@ -1,9 +1,0 @@
-{
-    "name":  "web-frontend",
-    "version":  "0.1.0",
-    "license":  "see SOURCES.md",
-    "description":  "Web UI: React, Next.js, Vue, performance, motion and design guidelines. Skills are untested candidates.",
-    "author":  {
-                   "name":  "Athos Kolling"
-               }
-}

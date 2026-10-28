@@ -1,104 +1,84 @@
 {
-    "name":  "ai-skills-ecosystem",
-    "owner":  {
-                  "name":  "Athos Kolling"
-              },
-    "plugins":  [
-                    {
-                        "name":  "software-dev",
-                        "source":  "./plugins/software-dev",
-                        "description":  "Software development vertical path (candidate, MVP test)"
-                    },
-                    {
-                        "name":  "research-synthesis",
-                        "source":  "./plugins/research-synthesis",
-                        "description":  "Question to cited report (candidate, MVP test)"
-                    },
-                    {
-                        "name":  "design",
-                        "source":  "./plugins/design",
-                        "description":  "Briefing to design spec (candidate, MVP test)"
-                    },
-                    {
-                        "name":  "presentations",
-                        "source":  "./plugins/presentations",
-                        "description":  "Content to reviewed slide structure (candidate, MVP test)"
-                    },
-                    {
-                        "name":  "security-audit",
-                        "source":  "./plugins/security-audit",
-                        "description":  "security-audit (untested)"
-                    },
-                    {
-                        "name":  "qa-release",
-                        "source":  "./plugins/qa-release",
-                        "description":  "qa-release (untested)"
-                    },
-                    {
-                        "name":  "devops-infra",
-                        "source":  "./plugins/devops-infra",
-                        "description":  "devops-infra (untested)"
-                    },
-                    {
-                        "name":  "database",
-                        "source":  "./plugins/database",
-                        "description":  "database (untested)"
-                    },
-                    {
-                        "name":  "apis-mcp",
-                        "source":  "./plugins/apis-mcp",
-                        "description":  "apis-mcp (untested)"
-                    },
-                    {
-                        "name":  "data-ai",
-                        "source":  "./plugins/data-ai",
-                        "description":  "data-ai (untested)"
-                    },
-                    {
-                        "name":  "docs-writing",
-                        "source":  "./plugins/docs-writing",
-                        "description":  "docs-writing (untested)"
-                    },
-                    {
-                        "name":  "agent-orchestration",
-                        "source":  "./plugins/agent-orchestration",
-                        "description":  "agent-orchestration (untested)"
-                    },
-                    {
-                        "name":  "learning",
-                        "source":  "./plugins/learning",
-                        "description":  "learning (untested)"
-                    },
-                    {
-                        "name":  "business-ops",
-                        "source":  "./plugins/business-ops",
-                        "description":  "business-ops (untested)"
-                    },
-                    {
-                        "name":  "web-frontend",
-                        "source":  "./plugins/web-frontend",
-                        "description":  "web-frontend (untested)"
-                    },
-                    {
-                        "name":  "languages",
-                        "source":  "./plugins/languages",
-                        "description":  "languages (untested)"
-                    },
-                    {
-                        "name":  "engineering-practices",
-                        "source":  "./plugins/engineering-practices",
-                        "description":  "engineering-practices (untested)"
-                    },
-                    {
-                        "name":  "mobile",
-                        "source":  "./plugins/mobile",
-                        "description":  "mobile (untested)"
-                    },
-                    {
-                        "name":  "landing-page",
-                        "source":  "./plugins/landing-page",
-                        "description":  "Briefing to finished landing page (needs design + web-frontend)"
-                    }
-                ],
-    "description":  "Personal skills ecosystem (MVP)"
+    "name": "ai-skills-ecosystem",
+    "owner": {
+        "name": "Athos Kolling"
+    },
+    "plugins": [
+        {
+            "name": "software-dev",
+            "source": "./plugins/software-dev",
+            "description": "Software development: implement, tdd, diagnosing-bugs, code-review, architecture decision records, code tour, agent debugging. Skills are candidates."
+        },
+        {
+            "name": "software-dev-linguagens",
+            "source": "./plugins/software-dev-linguagens",
+            "description": "Subgroup of software-dev: TypeScript, Python, JavaScript, Go, Rust, Java (candidates)."
+        },
+        {
+            "name": "design",
+            "source": "./plugins/design",
+            "description": "Visual design: direction, critique (impeccable) and visual art (canvas-design). Candidates."
+        },
+        {
+            "name": "frontend",
+            "source": "./plugins/frontend",
+            "description": "Front-end and landing pages: React, Next.js, Vue, design-system tokens, accessibility, landing-page command (candidates)."
+        },
+        {
+            "name": "research-synthesis",
+            "source": "./plugins/research-synthesis",
+            "description": "Question to cited report, with deep-research (candidate, MVP test)"
+        },
+        {
+            "name": "presentations",
+            "source": "./plugins/presentations",
+            "description": "Content to reviewed slide structure (candidate, MVP test)"
+        },
+        {
+            "name": "docs-writing",
+            "source": "./plugins/docs-writing",
+            "description": "Documentation, writing, brand, SEO, and learning/teaching skills (untested)."
+        },
+        {
+            "name": "business-ops",
+            "source": "./plugins/business-ops",
+            "description": "Business analysis and operations (untested)."
+        },
+        {
+            "name": "security-audit",
+            "source": "./plugins/security-audit",
+            "description": "Review code and dependencies for security problems (untested)."
+        },
+        {
+            "name": "qa-release",
+            "source": "./plugins/qa-release",
+            "description": "Testing and verification before release (untested)."
+        },
+        {
+            "name": "data-ai",
+            "source": "./plugins/data-ai",
+            "description": "Data, prompts, RAG and ML (untested)."
+        },
+        {
+            "name": "database",
+            "source": "./plugins/database",
+            "description": "Databases: MongoDB schema, Postgres, MySQL, migrations, Redis, Prisma (untested)."
+        },
+        {
+            "name": "mobile",
+            "source": "./plugins/mobile",
+            "description": "Android, iOS, Flutter and React Native patterns (untested)."
+        },
+        {
+            "name": "agent-orchestration",
+            "source": "./plugins/agent-orchestration",
+            "description": "Plan and split work between agents: grilling, planning, handoff, subagents (untested)."
+        },
+        {
+            "name": "infra",
+            "source": "./plugins/infra",
+            "description": "Infrastructure and services: Docker, Kubernetes, Terraform, CI/CD, monitoring, plus APIs and MCP servers (untested)."
+        }
+    ],
+    "description": "Personal skills ecosystem (MVP)"
 }

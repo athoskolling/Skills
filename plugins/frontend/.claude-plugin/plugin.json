@@ -1,0 +1,12 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "license": "see SOURCES.md",
+  "description": "Front-end and landing pages: React, Next.js, Vue, performance, motion, design-system tokens, WCAG check, and the one-file landing page command. Skills are untested candidates.",
+  "author": {
+    "name": "Athos Kolling"
+  },
+  "dependencies": [
+    "design"
+  ]
+}

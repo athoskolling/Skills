@@ -17,3 +17,16 @@ Dropped from teams.yaml: `spec` (gstack), per the "max 4 skills" note. teams.yam
 - implement: removed `disable-model-invocation: true` from the frontmatter. With it, the dev-flow command could not call the skill (found in eval case 1, 2026-10-27). Re-apply this when updating from upstream.
 
 Licenses: see ../../catalog/LICENSES.md (checked 2026-10-27).
+
+## Moved from engineering-practices
+
+| Skill | Resource | What it does | Risk flags found by pattern scan (not a review) |
+|---|---|---|---|
+| architecture-decision-records | ecc | Capture architectural decisions as numbered ADR markdown files in docs/adr/ with context, alternatives considered, consequences, and an i... | none |
+| code-tour | ecc | Create CodeTour `.tour` files — persona-targeted, step-by-step walkthroughs with real file and line anchors. | none |
+
+## Added from catalog
+
+| Skill | Resource | Level |
+|---|---|---|
+| agent-introspection-debugging | ecc (orchestration) | candidate |

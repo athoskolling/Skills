@@ -79,3 +79,5 @@ Teams in `registry/teams.yaml` are a first draft built from the index only. Keep
 - (2026-10-27) Groups expanded with best-quality skills from the whole catalog (selected by source trust, hygiene filters and relevance; risky/Critical and MCP-dependent skills left out). Now 18 groups, 237 skills (new groups: web-frontend, languages, engineering-practices, mobile). All groups 5-18 untested.
 
 - (2026-10-27) landing-page group added; web-frontend got taste-skill (full upstream copy) and ui-ux-pro-max (external); impeccable removed. 19 groups, 239 skills. Work paused at the user's 45% usage rule: see PROGRESSO.md for requests, state and pending items.
+
+- (2026-10-28) Groups reorganized: 19 down to 15 plugins (software-dev-linguagens as subgroup of software-dev). engineering-practices and most of languages removed; learning into docs-writing; apis-mcp and devops-infra into infra; web-frontend renamed frontend (with landing-page, design-system, accessibility). database and agent-orchestration pruned. See DECISIONS.md rodada 9 and PROGRESSO.md.

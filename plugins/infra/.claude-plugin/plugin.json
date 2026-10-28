@@ -1,0 +1,9 @@
+{
+  "name": "infra",
+  "version": "0.1.0",
+  "license": "see SOURCES.md",
+  "description": "Infrastructure and services: Docker, Kubernetes, Terraform, CI/CD, monitoring, plus APIs and MCP servers. Skills are untested candidates.",
+  "author": {
+    "name": "Athos Kolling"
+  }
+}

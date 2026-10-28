@@ -20,8 +20,8 @@ Regra que você deu: ao chegar a 45% do uso da janela de 5 horas, salvar o progr
 
 ## Estado atual (tudo no GitHub, exceto o último bloco abaixo)
 
-- **19 grupos, 239 skills**; acervo de consulta com **646 skills** em `catalog/` (sem duplicados).
-- Grupos testados no Claude Code: `software-dev`, `research-synthesis`, `design`, `presentations`. Os outros 15 não foram testados (por sua escolha), exceto o `landing-page`, testado 3 vezes.
+- **15 plugins (14 grupos + o subgrupo `software-dev-linguagens`), 199 skills**; acervo de consulta com **646 skills** em `catalog/` (sem duplicados). Reorganização de 2026-10-28, detalhada na seção final.
+- Grupos testados no Claude Code: `software-dev`, `research-synthesis`, `design`, `presentations`. Os outros não foram testados (por sua escolha). O comando de landing page, agora em `frontend`, foi testado 3 vezes antes da junção.
 - Fases: 0 e 1 aprovadas; 3 aprovada; 2 (Cowork) adiada; 4 (expansão) depende do seu uso real.
 - Documentação: `GRUPOS.md` (o que cada grupo e skill faz), `GUIA.md` (instalar, escolher só algumas, adicionar mais), `catalog/LICENSES.md` (licenças).
 - Ferramentas: `scripts/install.ps1` (instala com rollback; `-Skill` para parte do grupo), `scripts/add-skills.ps1` (adiciona skills do acervo a um grupo).
@@ -47,3 +47,13 @@ Regra que você deu: ao chegar a 45% do uso da janela de 5 horas, salvar o progr
 
 1. Abrir uma sessão nova (`/clear`) e dizer: "leia o PROGRESSO.md e o ROADMAP.md e continue".
 2. Para instalar: `/plugin marketplace add athoskolling/Skills` e `/plugin install <grupo>@ai-skills-ecosystem` (o repo é privado; precisa estar logado no GitHub).
+
+## Reorganização dos grupos (2026-10-28)
+
+- De 19 grupos para 15 plugins. Excluídos: `engineering-practices` (exceto architecture-decision-records e code-tour, que foram para `software-dev`) e o restante de `languages`. Juntados: `learning` em `docs-writing`; `apis-mcp` e `devops-infra` em `infra`; `web-frontend` virou `frontend`, com o comando de landing page (agora `/frontend:landing-page`) e com design-system e accessibility, que saíram de `design`.
+- `software-dev-linguagens` é um plugin separado, subgrupo de `software-dev`, com as 6 linguagens mais usadas.
+- Enxugados: `database` (16 para 9) e `agent-orchestration` (32 para 24).
+- Acrescentados do acervo: deep-research, agent-introspection-debugging, impeccable e canvas-design.
+- **Pendências para você decidir:** `impeccable` (cópia do acervo só com SKILL.md; a completa precisa de `npx`) e `deep-research` (depende dos servidores MCP firecrawl e exa). Os dois estão nos grupos por escolha sua, com aviso nos `SOURCES.md`. Se quiser, removo qualquer um dos dois.
+- Não testado: a reorganização em si. Nenhum plugin foi instalado depois das mudanças.
+

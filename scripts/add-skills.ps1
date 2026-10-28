@@ -1,6 +1,6 @@
 # Adds skills from catalog/skills-catalog.zip to a plugin group (creates the group if new).
 # Only the named skills are extracted, one at a time. Nothing outside plugins/ and the marketplace file is touched.
-#   .\add-skills.ps1 -Plugin database -Skills postgres-patterns,sql-pro -Description "SQL and schema work"
+#   .\add-skills.ps1 -Plugin database -Skills postgres-pro,sql-pro -Description "SQL and schema work"
 #   .\add-skills.ps1 -Plugin database -Skills redis-patterns            (adds one more to an existing group)
 # Each new skill is scanned for risky patterns (network, installs, MCP, scripts); matches go into the group's SOURCES.md.
 param(

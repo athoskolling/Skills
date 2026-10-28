@@ -75,3 +75,15 @@ Nada disso foi testado na prática ainda.
 - **Fase 2 (Cowork) adiada.** O usuário não tem acesso ao Cowork agora. A Fase 3 pode começar sem a Fase 2 aprovada (exceção à seção 13 do prompt mestre, autorizada pelo usuário: "continuar e depois testar qualquer coisa no cowork").
 - **Regra durante a exceção:** nenhum plugin é marcado como compatível com o Cowork nem sobe de nível para Production-ready. Tudo fica "Cowork: não verificado".
 - **Pendência:** quando o Cowork estiver disponível, instalar os zips (`scripts/install.ps1 -Mode zip`), rodar o workflow de cada plugin e registrar o resultado.
+
+## Rodada 9 (reorganização dos grupos, 2026-10-28)
+
+- **Quantidade:** de 19 grupos para 15 plugins. `software-dev-linguagens` é subgrupo de `software-dev`, mas em plugin separado.
+- **Excluídos:** `engineering-practices` (com architecture-decision-records e code-tour indo para `software-dev`) e o restante de `languages`.
+- **Juntados:** `learning` em `docs-writing`; `apis-mcp` e `devops-infra` em `infra`; `web-frontend` virou `frontend`, com `landing-page` (comando `/frontend:landing-page`).
+- **Mudou de grupo:** design-system e accessibility saíram de `design` para `frontend`. `design` ficou com frontend-design-direction, impeccable e canvas-design, pois serve para outras ferramentas visuais além de web.
+- **Enxugados:** `database` (uma skill por banco) e `agent-orchestration` (uma por tema: grilling + grill-me, plan-eng-review + writing-plans, handoff, subagent-driven-development, skill-creator).
+- **Referências:** skills removidas com equivalente foram trocadas nos textos. Nomes sem equivalente ficaram como estavam.
+- **Acrescentados do acervo:** deep-research (research-synthesis, depende de MCP firecrawl e exa), agent-introspection-debugging (software-dev), impeccable (design, só SKILL.md) e canvas-design (design).
+- **Escopo:** só saíram de `plugins/`. O `catalog/` continua com todas as skills.
+

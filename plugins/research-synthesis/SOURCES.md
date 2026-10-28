@@ -13,3 +13,11 @@ Review (2026-10-27): SKILL.md only, no scripts, no MCP, no network commands. Lic
 ## Local modifications
 
 - None to skill content. The scholar-evaluation directory is named after the skill `name` (scientific-thinking-scholar-evaluation).
+
+## Added from catalog
+
+| Skill | Resource | Level |
+|---|---|---|
+| deep-research | ecc (orchestration) | candidate |
+
+Caveat (added 2026-10-28): deep-research needs the firecrawl and exa MCP tools (external servers). ROADMAP.md left MCP-dependent skills out of the selection; kept here because it was chosen explicitly.

@@ -2,6 +2,8 @@
   "name": "design",
   "version": "0.1.0",
   "license": "see SOURCES.md",
-  "description": "From a design briefing to a design spec: direction, tokens and components, WCAG 2.2 AA check. Skills are candidate level (test use only).",
-  "author": { "name": "Athos Kolling" }
+  "description": "Visual design: direction, critique and polish (impeccable), and visual art (canvas-design). Skills are candidate level (test use only).",
+  "author": {
+    "name": "Athos Kolling"
+  }
 }

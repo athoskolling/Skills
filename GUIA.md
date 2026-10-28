@@ -57,7 +57,7 @@ Apague a pasta `plugins/<grupo>/skills/<skill>` e a linha dela no `SOURCES.md` d
 
 ## Cuidados
 
-- Os grupos 5 a 14 **não foram testados**. Se algum falhar, me diga qual.
+- Os grupos marcados como não testados em `GRUPOS.md` ainda não foram testados. Se algum falhar, me diga qual.
 - Skills com `disable-model-invocation` só rodam quando você chama pelo nome (`/grill-me`). O Claude não as chama sozinho.
 - O zip guarda só o `SKILL.md`. Skills que dependem de scripts ou arquivos extras (como `planning-with-files`) funcionam parcialmente.
 - O alerta do `SOURCES.md` é uma busca de palavras (rede, instalação, MCP, scripts), não uma revisão. Palavra encontrada não significa perigo, e ausência não garante segurança.
