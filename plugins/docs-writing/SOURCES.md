@@ -32,3 +32,11 @@ Licenses: see ../../catalog/LICENSES.md.
 | codebase-onboarding | ecc | Analyze an unfamiliar codebase and generate a structured onboarding guide with architecture map, key entry points, conventions, and a sta... | npx |
 | academy-guide | anthropic-skills-official | > | mcp |
 | discernment-nudge | anthropic-skills-official | > | none |
+
+## Added 2026-10-29 (from catalog)
+
+| Skill | Resource | Level |
+|---|---|---|
+| make-pdf | gstack | candidate |
+
+Makes PDFs from Markdown. No external service. Anthropic document skills (docx, pdf, xlsx, pptx) are NOT added: source-available, licence to confirm first.

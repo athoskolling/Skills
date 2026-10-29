@@ -33,3 +33,11 @@ Licenses: see ../../catalog/LICENSES.md.
 | api-connector-builder | ecc | Build a new API connector or provider by matching the target repo's existing integration pattern exactly. | .py, mcp |
 | mcp-dependency-review | ecc | Statically review MCP configuration for mutable package references before approval or CI, without executing discovered MCP servers. | mcp, npx |
 | mcp-cli | superpowers-lab | Use MCP servers on-demand via the mcp CLI tool - discover tools, resources, and prompts without polluting context with pre-loaded MCP int... | api_key, mcp, npx |
+
+## Added 2026-10-29 (from catalog)
+
+| Skill | Resource | Level |
+|---|---|---|
+| api-discipline | api-discipline (SkillProof) | candidate |
+
+Licence: the LICENSE file in the folder is MIT (SkillProof, 2026). The catalog index had it as undefined; that is now resolved by this file. The README is promotional (links to SkillProof). The SKILL.md suggests `npx @redocly/cli` and `@stoplight/spectral-cli` for linting; these run only if the user chooses.

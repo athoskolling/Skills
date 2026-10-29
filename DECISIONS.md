@@ -87,3 +87,11 @@ Nada disso foi testado na prática ainda.
 - **Acrescentados do acervo:** deep-research (research-synthesis, depende de MCP firecrawl e exa), agent-introspection-debugging (software-dev), impeccable (design, só SKILL.md) e canvas-design (design).
 - **Escopo:** só saíram de `plugins/`. O `catalog/` continua com todas as skills.
 
+## Rodada 10 (skills do skills.sh e do catálogo, 2026-10-29)
+
+- **Fonte:** skills.sh não resolve nesta sessão (DNS). A busca foi feita no catálogo local e nos repositórios de origem.
+- **Adicionadas:** make-pdf (docs-writing), springboot-tdd (software-dev-linguagens), orch-fix-defect (software-dev, precisa adaptar), agent-self-evaluation e ml-adoption-playbook (data-ai), api-discipline (infra). Todas MIT.
+- **Pendente de confirmação de licença:** docx, pdf, xlsx e pptx da Anthropic (source-available).
+- **Pendente de sua decisão:** investigate (gstack). Depende de helpers do gstack que não estão no repositório e envia consultas sanitizadas para aside.com.
+- **Descartadas:** ito-training e ito-compute (serviço externo), exa-search (MCP externo), postgres (licença não verificada, sobrepõe postgres-pro).
+

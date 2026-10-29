@@ -30,3 +30,11 @@ Licenses: see ../../catalog/LICENSES.md (checked 2026-10-27).
 | Skill | Resource | Level |
 |---|---|---|
 | agent-introspection-debugging | ecc (orchestration) | candidate |
+
+## Added 2026-10-29 (from catalog)
+
+| Skill | Resource | Level |
+|---|---|---|
+| orch-fix-defect | ecc | candidate |
+
+Caveat: the skill delegates each phase to ECC agents (reproduce, fix, review, commit). Those agents are not in this repository, so the skill needs adapting before it works as written.

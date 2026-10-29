@@ -1,6 +1,6 @@
 # Grupos de skills
 
-15 plugins (software-dev-linguagens é subgrupo de software-dev), 199 skills. O acervo completo tem 646 skills em `catalog/`, para consulta; o resto fica lá.
+15 plugins (software-dev-linguagens é subgrupo de software-dev), 205 skills. O acervo completo tem 646 skills em `catalog/`, para consulta; o resto fica lá.
 
 Como usar, escolher só algumas e adicionar mais: veja `GUIA.md`. Decisões da reorganização em `DECISIONS.md`.
 
@@ -23,6 +23,7 @@ Desenvolvimento: escrever, revisar e depurar código. Testado. *Estado: Testado.
 - `diagnosing-bugs`: acha a causa raiz de bug difícil antes de mexer no código.
 - `implement`: implementa a partir de uma spec ou ticket, usando `tdd` e `code-review`.
 - `tdd`: desenvolvimento guiado por testes (teste primeiro).
+- `orch-fix-defect`: Fixes a bug by reproducing it as a failing regression test, fixing to green, reviewing and committing. Needs adaptation: delegates to ECC agents not in this repo.
 
 ## software-dev-linguagens
 
@@ -34,6 +35,7 @@ Subgrupo de software-dev: skills por linguagem e framework. Plugin separado. *Es
 - `python-pro`: Use when building Python 3.11+ applications requiring type safety, async programming, or robust error handling.
 - `rust-engineer`: Writes, reviews, and debugs idiomatic Rust code with memory safety and zero-cost abstractions.
 - `typescript-pro`: Implements advanced TypeScript type systems, creates custom type guards, utility types, and branded types, and configures tRPC ...
+- `springboot-tdd`: TDD for Spring Boot with JUnit 5, Mockito, MockMvc, Testcontainers and JaCoCo.
 
 ## design
 
@@ -112,6 +114,7 @@ Documentação, escrita, marca, SEO e aprendizado (ensinar e aprender). *Estado:
 - `writing-for-agents`: Writing documents for agents.
 - `writing-fragments`: junta fragmentos soltos, sem estrutura ainda.
 - `writing-shape`: transforma o material em artigo, parágrafo a parágrafo.
+- `make-pdf`: Turns Markdown into a publication-quality PDF. No external service.
 
 ## business-ops
 
@@ -201,6 +204,8 @@ Dados, prompts, RAG e ML. *Estado: Não testado.*
 - `regex-vs-llm-structured-text`: Decision framework for parsing structured text (quizzes, forms, invoices, receipts, tables) with a hybrid regex-first pipeline ...
 - `spark-engineer`: Use when writing Spark jobs, debugging performance issues, or configuring cluster settings for Apache Spark applications, distr...
 - `token-budget-advisor`: Offer a choice of response depth (25%/50%/75%/100%) with token estimates before answering, then answer at that level.
+- `agent-self-evaluation`: The agent rates its own output after a task on accuracy, completeness, clarity, actionability and conciseness.
+- `ml-adoption-playbook`: Methodology for adding ML algorithms to an existing non-ML codebase: problem framing, data readiness, decoupling, baselines.
 
 ## database
 
@@ -287,6 +292,7 @@ Infraestrutura e serviços: Docker, Kubernetes, Terraform, CI/CD, monitoramento,
 - `monitoring-expert`: logs estruturados, Prometheus/Grafana.
 - `sre-engineer`: SLOs, orçamento de erro, resposta a incidentes.
 - `terraform-engineer`: infraestrutura como código (AWS, Azure, GCP).
+- `api-discipline`: REST API design review: naming, versioning, pagination, status codes, PUT vs PATCH, OpenAPI linting. MIT.
 
 ## Ficaram de fora de propósito
 Skills que enviam mensagens, fazem cobrança ou prospecção (risco Crítico), as que dependem de fuzzers e scanners externos, as obsoletas (`continuous-learning`) e as de nicho (homelab, energia, logística). Continuam em `catalog/`.

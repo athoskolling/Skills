@@ -13,3 +13,11 @@ Licenses: see ../../catalog/LICENSES.md.
 | golang-pro | jeffallan-claude-skills | Implements concurrent Go patterns using goroutines and channels, designs and builds microservices with gRPC or REST, optimizes Go applica... | none |
 | rust-engineer | jeffallan-claude-skills | Writes, reviews, and debugs idiomatic Rust code with memory safety and zero-cost abstractions. | none |
 | java-architect | jeffallan-claude-skills | Use when building, configuring, or debugging enterprise Java applications with Spring Boot 3.x, microservices, or reactive programming. | none |
+
+## Added 2026-10-29 (from catalog)
+
+| Skill | Resource | Level |
+|---|---|---|
+| springboot-tdd | ecc | candidate |
+
+Spring Boot TDD with JUnit 5, Mockito and Testcontainers. Pairs with java-architect in this subgroup.

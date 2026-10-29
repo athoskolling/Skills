@@ -22,3 +22,12 @@ Licenses: see ../../catalog/LICENSES.md.
 | spark-engineer | jeffallan-claude-skills | Use when writing Spark jobs, debugging performance issues, or configuring cluster settings for Apache Spark applications, distributed dat... | none |
 | dashboard-builder | ecc | Build monitoring dashboards that answer real operator questions for Grafana, SigNoz, and similar platforms. | none |
 | goal-prompt | trail-of-bits-skills | Drafts copy-paste-ready /goal commands for goal mode in Claude Code and Codex. | .py, allowed-tools |
+
+## Added 2026-10-29 (from catalog)
+
+| Skill | Resource | Level |
+|---|---|---|
+| agent-self-evaluation | ecc | candidate |
+| ml-adoption-playbook | ecc | candidate |
+
+Both are methodology/checklist skills with no scripts or network calls (pattern scan clean).
