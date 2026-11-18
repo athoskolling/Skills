@@ -21,6 +21,7 @@ Ferramentas e coleções de skills de terceiros para estudar ou avaliar. Nada aq
 - vibe-wise
 - ecc (everything-claude-code, do vencedor do hackathon da Anthropic)
 - astryx — https://github.com/meta/astryx
+- unslop — https://github.com/theclaymethod/unslop
 
 ## Onde procurar mais
 
