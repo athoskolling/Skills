@@ -13,7 +13,7 @@ Ferramentas e coleções de skills de terceiros para estudar ou avaliar. Nada aq
 - humanizer
 - superpowers
 - matt-pocock
-- karpathy
+- karpathy (andrej-karpathy-skills) — https://github.com/forrestchang/andrej-karpathy-skills
 - last 30 days
 - agent reach
 - graphify
